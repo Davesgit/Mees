@@ -51,3 +51,8 @@ During this transition:
 - preserve approved UX behavior, learning architecture and non-gamification rules;
 - new V2 visual assets stay `review` until the V2 approval gate is passed;
 - production migration begins only after the mascot, brand lockup, core UI language, Home reference and Focus Mode reference are approved together.
+
+
+## V2 mascot expression lock
+
+For every new V2 mascot asset, preserve the canonical eye construction. Do not create emotion by substituting a different eye design. Use posture, head angle, wings, stance and restrained contextual accents. New glossy V1-style mascot assets are deprecated. New mascot work follows the approved calm flat or soft-shaded V2 direction.
