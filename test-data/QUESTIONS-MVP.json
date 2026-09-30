@@ -1,0 +1,561 @@
+{
+  "schema_version": 1,
+  "purpose": "synthetic_engine_test_questions",
+  "questions": [
+    {
+      "id": "Q-T001",
+      "version": 1,
+      "goal": "LG-TEST-001",
+      "type": "numeric_input",
+      "prompt": "3 + 4 = ?",
+      "answer": 7,
+      "params": {
+        "a": 3,
+        "b": 4,
+        "operation": "add"
+      },
+      "family": "add_to_10_basic",
+      "hints": [
+        "Tel vanaf 3 nog 4 verder.",
+        "Je kunt 4 stapjes maken vanaf 3."
+      ],
+      "explanation": "3 plus 4 is 7.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T002",
+      "version": 1,
+      "goal": "LG-TEST-001",
+      "type": "numeric_input",
+      "prompt": "5 + 2 = ?",
+      "answer": 7,
+      "params": {
+        "a": 5,
+        "b": 2,
+        "operation": "add"
+      },
+      "family": "add_to_10_basic",
+      "hints": [
+        "Begin bij 5 en tel 2 verder.",
+        "Na 5 komen 6 en 7."
+      ],
+      "explanation": "5 plus 2 is 7.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T003",
+      "version": 1,
+      "goal": "LG-TEST-001",
+      "type": "numeric_input",
+      "prompt": "6 + 3 = ?",
+      "answer": 9,
+      "params": {
+        "a": 6,
+        "b": 3,
+        "operation": "add"
+      },
+      "family": "add_to_10_basic",
+      "hints": [
+        "Tel 3 verder vanaf 6.",
+        "Maak drie stapjes: 7, 8, 9."
+      ],
+      "explanation": "6 plus 3 is 9.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T004",
+      "version": 1,
+      "goal": "LG-TEST-002",
+      "type": "numeric_input",
+      "prompt": "7 + ? = 10",
+      "answer": 3,
+      "params": {
+        "known": 7,
+        "total": 10
+      },
+      "family": "make_10_missing_part",
+      "hints": [
+        "Hoeveel ontbreekt er vanaf 7 tot 10?",
+        "Tel van 7 naar 10."
+      ],
+      "explanation": "Bij 7 moet 3 om 10 te maken.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T005",
+      "version": 1,
+      "goal": "LG-TEST-002",
+      "type": "numeric_input",
+      "prompt": "10 = 6 + ?",
+      "answer": 4,
+      "params": {
+        "known": 6,
+        "total": 10
+      },
+      "family": "make_10_missing_part",
+      "hints": [
+        "Zoek het deel dat bij 6 hoort.",
+        "6 en 4 vormen samen 10."
+      ],
+      "explanation": "6 plus 4 is 10.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T006",
+      "version": 1,
+      "goal": "LG-TEST-003",
+      "type": "numeric_input",
+      "prompt": "8 + 5 = ?",
+      "answer": 13,
+      "params": {
+        "a": 8,
+        "b": 5,
+        "crosses_ten": true
+      },
+      "family": "add_cross_10",
+      "hints": [
+        "Maak eerst 10.",
+        "Van 8 naar 10 is 2. Wat blijft er van de 5 over?"
+      ],
+      "explanation": "8 + 2 = 10 en daarna nog 3, dus 13.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T007",
+      "version": 1,
+      "goal": "LG-TEST-003",
+      "type": "numeric_input",
+      "prompt": "9 + 4 = ?",
+      "answer": 13,
+      "params": {
+        "a": 9,
+        "b": 4,
+        "crosses_ten": true
+      },
+      "family": "add_cross_10",
+      "hints": [
+        "Maak eerst 10.",
+        "Gebruik 1 van de 4 om 10 te maken. Er blijven 3 over."
+      ],
+      "explanation": "9 + 1 + 3 = 13.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T008",
+      "version": 1,
+      "goal": "LG-TEST-003",
+      "type": "number_line",
+      "prompt": "Maak 7 + 6 op de getallenlijn.",
+      "answer": 13,
+      "params": {
+        "start": 7,
+        "delta": 6,
+        "min": 0,
+        "max": 20
+      },
+      "family": "add_cross_10_numberline",
+      "hints": [
+        "Spring vanaf 7 richting 10.",
+        "Je kunt eerst 3 springen naar 10 en daarna nog 3."
+      ],
+      "explanation": "7 + 3 = 10 en nog 3 maakt 13.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T009",
+      "version": 1,
+      "goal": "LG-TEST-004",
+      "type": "numeric_input",
+      "prompt": "8 - 3 = ?",
+      "answer": 5,
+      "params": {
+        "a": 8,
+        "b": 3,
+        "operation": "subtract"
+      },
+      "family": "subtract_to_10",
+      "hints": [
+        "Tel 3 terug vanaf 8.",
+        "7, 6, 5: je komt op 5."
+      ],
+      "explanation": "8 min 3 is 5.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T010",
+      "version": 1,
+      "goal": "LG-TEST-004",
+      "type": "numeric_input",
+      "prompt": "10 - 6 = ?",
+      "answer": 4,
+      "params": {
+        "a": 10,
+        "b": 6,
+        "operation": "subtract"
+      },
+      "family": "subtract_to_10",
+      "hints": [
+        "Welk deel blijft over als 6 van 10 weggaat?",
+        "6 en 4 vormen samen 10."
+      ],
+      "explanation": "10 min 6 is 4.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T011",
+      "version": 1,
+      "goal": "LG-TEST-005",
+      "type": "numeric_input",
+      "prompt": "13 - 5 = ?",
+      "answer": 8,
+      "params": {
+        "a": 13,
+        "b": 5,
+        "crosses_ten": true
+      },
+      "family": "subtract_cross_10",
+      "hints": [
+        "Ga eerst terug naar 10.",
+        "Van 13 naar 10 is 3. Trek daarna nog 2 af."
+      ],
+      "explanation": "13 - 3 = 10 en 10 - 2 = 8.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T012",
+      "version": 1,
+      "goal": "LG-TEST-005",
+      "type": "number_line",
+      "prompt": "Maak 15 - 7 op de getallenlijn.",
+      "answer": 8,
+      "params": {
+        "start": 15,
+        "delta": -7,
+        "min": 0,
+        "max": 20
+      },
+      "family": "subtract_cross_10_numberline",
+      "hints": [
+        "Spring terug richting 10.",
+        "Eerst 5 terug naar 10, daarna nog 2."
+      ],
+      "explanation": "15 - 5 - 2 = 8.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T013",
+      "version": 1,
+      "goal": "LG-TEST-006",
+      "type": "numeric_input",
+      "prompt": "32 + 5 = ?",
+      "answer": 37,
+      "params": {
+        "a": 32,
+        "b": 5,
+        "crosses_ten": false
+      },
+      "family": "add_to_100_no_cross",
+      "hints": [
+        "De tientallen blijven hetzelfde.",
+        "Tel 5 bij de 2 eenheden op."
+      ],
+      "explanation": "32 + 5 = 37.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T014",
+      "version": 1,
+      "goal": "LG-TEST-006",
+      "type": "numeric_input",
+      "prompt": "41 + 7 = ?",
+      "answer": 48,
+      "params": {
+        "a": 41,
+        "b": 7,
+        "crosses_ten": false
+      },
+      "family": "add_to_100_no_cross",
+      "hints": [
+        "Kijk naar de eenheden.",
+        "1 + 7 = 8, de 4 tientallen blijven."
+      ],
+      "explanation": "41 + 7 = 48.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T015",
+      "version": 1,
+      "goal": "LG-TEST-007",
+      "type": "numeric_input",
+      "prompt": "47 + 6 = ?",
+      "answer": 53,
+      "params": {
+        "a": 47,
+        "b": 6,
+        "crosses_ten": true
+      },
+      "family": "add_to_100_cross",
+      "hints": [
+        "Ga eerst van 47 naar 50.",
+        "Gebruik 3 om 50 te maken. Hoeveel blijft van de 6 over?"
+      ],
+      "explanation": "47 + 3 = 50 en nog 3 maakt 53.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T016",
+      "version": 1,
+      "goal": "LG-TEST-007",
+      "type": "numeric_input",
+      "prompt": "58 + 7 = ?",
+      "answer": 65,
+      "params": {
+        "a": 58,
+        "b": 7,
+        "crosses_ten": true
+      },
+      "family": "add_to_100_cross",
+      "hints": [
+        "Maak eerst 60.",
+        "58 + 2 = 60. Daarna blijft 5 over."
+      ],
+      "explanation": "58 + 2 + 5 = 65.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T017",
+      "version": 1,
+      "goal": "LG-TEST-007",
+      "type": "number_line",
+      "prompt": "Maak 36 + 8 op de getallenlijn.",
+      "answer": 44,
+      "params": {
+        "start": 36,
+        "delta": 8,
+        "min": 0,
+        "max": 100
+      },
+      "family": "add_to_100_cross_numberline",
+      "hints": [
+        "Spring eerst naar 40.",
+        "Van 36 naar 40 is 4. Hoeveel blijft er over?"
+      ],
+      "explanation": "36 + 4 = 40 en nog 4 maakt 44.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T018",
+      "version": 1,
+      "goal": "LG-TEST-008",
+      "type": "numeric_input",
+      "prompt": "48 - 6 = ?",
+      "answer": 42,
+      "params": {
+        "a": 48,
+        "b": 6,
+        "crosses_ten": false
+      },
+      "family": "subtract_to_100_no_cross",
+      "hints": [
+        "De tientallen hoeven niet te veranderen.",
+        "8 - 6 = 2."
+      ],
+      "explanation": "48 - 6 = 42.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T019",
+      "version": 1,
+      "goal": "LG-TEST-008",
+      "type": "numeric_input",
+      "prompt": "76 - 4 = ?",
+      "answer": 72,
+      "params": {
+        "a": 76,
+        "b": 4,
+        "crosses_ten": false
+      },
+      "family": "subtract_to_100_no_cross",
+      "hints": [
+        "Kijk naar de eenheden.",
+        "6 - 4 = 2."
+      ],
+      "explanation": "76 - 4 = 72.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T020",
+      "version": 1,
+      "goal": "LG-TEST-009",
+      "type": "numeric_input",
+      "prompt": "52 - 7 = ?",
+      "answer": 45,
+      "params": {
+        "a": 52,
+        "b": 7,
+        "crosses_ten": true
+      },
+      "family": "subtract_to_100_cross",
+      "hints": [
+        "Ga eerst terug naar 50.",
+        "52 - 2 = 50. Hoeveel moet er daarna nog af?"
+      ],
+      "explanation": "52 - 2 - 5 = 45.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T021",
+      "version": 1,
+      "goal": "LG-TEST-009",
+      "type": "numeric_input",
+      "prompt": "63 - 8 = ?",
+      "answer": 55,
+      "params": {
+        "a": 63,
+        "b": 8,
+        "crosses_ten": true
+      },
+      "family": "subtract_to_100_cross",
+      "hints": [
+        "Ga eerst naar 60.",
+        "63 - 3 = 60. Trek daarna nog 5 af."
+      ],
+      "explanation": "63 - 3 - 5 = 55.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T022",
+      "version": 1,
+      "goal": "LG-TEST-009",
+      "type": "number_line",
+      "prompt": "Maak 71 - 6 op de getallenlijn.",
+      "answer": 65,
+      "params": {
+        "start": 71,
+        "delta": -6,
+        "min": 0,
+        "max": 100
+      },
+      "family": "subtract_to_100_cross_numberline",
+      "hints": [
+        "Spring eerst terug naar 70.",
+        "Na 1 terug blijven er nog 5 over."
+      ],
+      "explanation": "71 - 1 - 5 = 65.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T023",
+      "version": 1,
+      "goal": "LG-TEST-010",
+      "type": "number_line",
+      "prompt": "Plaats 35 op de getallenlijn.",
+      "answer": 35,
+      "params": {
+        "target": 35,
+        "min": 0,
+        "max": 100,
+        "major_step": 10
+      },
+      "family": "locate_number_100",
+      "hints": [
+        "Zoek eerst 30 en 40.",
+        "35 ligt precies tussen 30 en 40."
+      ],
+      "explanation": "35 ligt halverwege 30 en 40.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T024",
+      "version": 1,
+      "goal": "LG-TEST-010",
+      "type": "number_line",
+      "prompt": "Welk getal staat hier tussen 60 en 70?",
+      "answer": 64,
+      "params": {
+        "target": 64,
+        "min": 60,
+        "max": 70,
+        "minor_step": 1
+      },
+      "family": "read_numberline_100",
+      "hints": [
+        "Begin bij 60 en tel de kleine stapjes.",
+        "Vier stapjes na 60 is 64."
+      ],
+      "explanation": "Het gemarkeerde getal is 64.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T025",
+      "version": 1,
+      "goal": "LG-TEST-007",
+      "type": "numeric_input",
+      "prompt": "29 + 5 = ?",
+      "answer": 34,
+      "params": {
+        "a": 29,
+        "b": 5,
+        "crosses_ten": true
+      },
+      "family": "add_to_100_cross",
+      "hints": [
+        "Maak eerst 30.",
+        "Gebruik 1 van de 5 voor 30 en tel daarna de overige 4."
+      ],
+      "explanation": "29 + 1 + 4 = 34.",
+      "status": "test",
+      "language": "nl-NL"
+    },
+    {
+      "id": "Q-T026",
+      "version": 1,
+      "goal": "LG-TEST-009",
+      "type": "numeric_input",
+      "prompt": "40 - 6 = ?",
+      "answer": 34,
+      "params": {
+        "a": 40,
+        "b": 6,
+        "crosses_ten": true
+      },
+      "family": "subtract_from_tens",
+      "hints": [
+        "Denk aan 10 - 6.",
+        "Van 40 zes terug kom je op 34."
+      ],
+      "explanation": "40 - 6 = 34.",
+      "status": "test",
+      "language": "nl-NL"
+    }
+  ],
+  "notes": [
+    "Alle vragen zijn synthetische testcontent.",
+    "De set is bedoeld om contracts en enginegedrag te testen, niet als gevalideerde curriculumset.",
+    "Denkfouten zijn bewust geen vraagveld."
+  ]
+}
