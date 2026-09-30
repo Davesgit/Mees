@@ -580,3 +580,49 @@
  .mees-today-art img{width:94px;height:80px}
  .mees-age--middle .mees-today{padding:16px}
 }
+
+
+/* HOME V1 FINAL POLISH — middle band */
+.mees-age--middle .mees-home{gap:20px}
+.mees-age--middle .mees-home-section{
+  padding-top:4px;
+  border-top:0;
+}
+.mees-age--middle .mees-section-heading{margin-bottom:10px}
+.mees-age--middle .mees-subject-grid{gap:14px}
+.mees-age--middle .mees-subject-card{
+  min-height:166px;
+  padding:10px 17px 15px;
+}
+.mees-age--middle .mees-subject-image{
+  inset:2px 14px 50px;
+  width:calc(100% - 28px);
+  height:calc(100% - 56px);
+  transform:scale(.88);
+  transform-origin:center bottom;
+}
+.mees-age--middle .mees-subject-copy{
+  padding-top:5px;
+  min-height:44px;
+}
+.mees-age--middle .mees-subject-card strong{
+  font-size:.96rem;
+  line-height:1.18;
+}
+.mees-age--middle .mees-subject-card small{
+  margin-top:4px;
+  font-size:.79rem;
+  line-height:1.25;
+}
+@media(max-width:800px){
+ .mees-age--middle .mees-subject-card{min-height:158px}
+ .mees-age--middle .mees-subject-image{transform:scale(.9)}
+}
+@media(max-width:540px){
+ .mees-age--middle .mees-home-section{padding-top:2px}
+ .mees-age--middle .mees-subject-card{min-height:124px;padding:10px 14px}
+ .mees-age--middle .mees-subject-image{
+   position:relative;inset:auto;width:100px;height:96px;
+   transform:scale(.9);flex:none
+ }
+}
