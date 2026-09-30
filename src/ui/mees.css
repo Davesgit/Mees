@@ -1259,3 +1259,101 @@ body{background:var(--mees-v2-canvas);color:var(--mees-v2-text)}
   border-color:var(--mees-v2-border);
   box-shadow:none;
 }
+
+
+/* V2 HOME — calm educational composition */
+.mees-home{
+  gap:20px;
+}
+.mees-home-hero{
+  min-height:220px;
+  grid-template-columns:minmax(0,1fr) 150px;
+  padding:36px 40px;
+  border:1px solid var(--mees-v2-border);
+  border-radius:18px;
+  background:linear-gradient(135deg,#f1f7ff 0%,#f7fbff 62%,#f1faf5 100%);
+  box-shadow:none;
+}
+.mees-home-hero:after{content:none}
+.mees-home-hero h1{
+  color:var(--mees-v2-text);
+  font-size:clamp(2rem,4vw,2.8rem);
+  letter-spacing:-.035em;
+}
+.mees-home-hero p:last-child{
+  color:var(--mees-v2-muted);
+  max-width:560px;
+}
+.mees-v2-hero-mark{
+  position:relative;
+  width:136px;
+  height:136px;
+  display:grid;
+  place-items:center;
+  justify-self:end;
+}
+.mees-v2-hero-mark img{
+  position:relative;
+  z-index:1;
+  width:92px;
+  height:92px;
+  object-fit:contain;
+}
+.mees-v2-hero-orbit{
+  position:absolute;
+  inset:5px;
+  border-radius:44% 56% 54% 46%;
+  background:#dceeff;
+  transform:rotate(-7deg);
+}
+.mees-today{
+  padding:22px 24px;
+  border-color:var(--mees-v2-border);
+  border-radius:16px;
+  box-shadow:none;
+}
+.mees-today-art{
+  width:62px;
+  height:62px;
+  border-radius:14px;
+  background:#eef6ff;
+}
+.mees-subject-grid{gap:12px}
+.mees-subject-card{
+  min-height:126px;
+  padding:17px;
+  border-color:var(--mees-v2-border);
+  border-radius:15px;
+  box-shadow:none;
+}
+.mees-subject-card:hover{
+  border-color:#b9cee5;
+  transform:translateY(-1px);
+}
+.subject-math{background:#edf8f2}
+.subject-language{background:#fff7e7}
+.subject-world{background:#edf7fd}
+.subject-creative{background:#f7f0fa}
+.mees-home-note{
+  min-height:112px;
+  padding:22px 24px;
+  border:1px solid var(--mees-v2-border);
+  border-radius:16px;
+  background:#fff;
+}
+.mees-calm-feedback{
+  background:#f3f8ff;
+  color:var(--mees-v2-muted);
+  border-color:var(--mees-v2-border);
+  font-weight:700;
+}
+@media(max-width:800px){
+ .mees-home-hero{grid-template-columns:1fr 96px;padding:28px}
+ .mees-v2-hero-mark{width:90px;height:90px}
+ .mees-v2-hero-mark img{width:64px;height:64px}
+}
+@media(max-width:540px){
+ .mees-home-hero{grid-template-columns:1fr;padding:24px}
+ .mees-v2-hero-mark{display:none}
+ .mees-home-note{align-items:flex-start;flex-direction:column}
+}
