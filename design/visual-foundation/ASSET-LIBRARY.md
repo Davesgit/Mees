@@ -93,3 +93,11 @@ Approved mascot assets may have two delivery variants:
 - `outline`: transparent mascot with the consistent soft white Mees contour, preferred on colored/illustrated UI backgrounds.
 
 Both variants represent the same approved character. The outline is a presentation treatment, not a change to Mees anatomy.
+
+
+## Compact Mees master — APPROVED ROLE
+Mees has two canonical base forms:
+- `MEES-MASCOT-BASE-001`: full-body character for learning scenes, poses, explanations and contextual illustrations.
+- `MEES-BRAND-HEAD-001`: compact head/body mark without legs or feet for logo lockups, app icon, favicon, small avatar and compact UI use.
+
+The compact form is not a different character. It must preserve the same crest, eyes, blue/cream coloring, beak and facial proportions as the canonical Mees.
