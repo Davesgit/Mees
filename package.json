@@ -9,7 +9,8 @@
     "sim": "tsx src/simulator/run.ts",
     "typecheck": "tsc --noEmit",
     "sim:profiles": "tsx src/simulator/profiles.ts",
-    "sim:journeys": "tsx src/simulator/journeys.ts"
+    "sim:journeys": "tsx src/simulator/journeys.ts",
+    "sim:session": "tsx src/simulator/session-demo.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
