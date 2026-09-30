@@ -1,0 +1,7 @@
+import{requestBasicHint,startBasic,submitBasic,type BasicAttempt,type BasicQuestion}from"./basic-engine.js";import{addSemanticJump,requestNumberLineHint,selectNumberLineValue,startNumberLine,submitNumberLine,type NumberLineAttempt,type NumberLineQuestion}from"./number-line-engine.js";
+export type ExerciseQuestion=BasicQuestion|NumberLineQuestion;
+export type ExerciseAttempt={kind:"basic";attempt:BasicAttempt}|{kind:"number_line";attempt:NumberLineAttempt};
+export type ExerciseCommand={type:"submit_text";value:string}|{type:"select_value";value:number}|{type:"add_jump";delta:number}|{type:"submit"}|{type:"hint"};
+export function startExercise(q:ExerciseQuestion):ExerciseAttempt{if(q.type==="numeric_input")return{kind:"basic",attempt:startBasic(q)};return{kind:"number_line",attempt:startNumberLine(q)}}
+export function reduceExercise(x:ExerciseAttempt,c:ExerciseCommand):ExerciseAttempt{if(x.kind==="basic"){if(c.type==="submit_text")return{kind:"basic",attempt:submitBasic(x.attempt,c.value)};if(c.type==="hint")return{kind:"basic",attempt:requestBasicHint(x.attempt)};return x}if(c.type==="select_value")return{kind:"number_line",attempt:selectNumberLineValue(x.attempt,c.value)};if(c.type==="add_jump")return{kind:"number_line",attempt:addSemanticJump(x.attempt,c.delta)};if(c.type==="submit")return{kind:"number_line",attempt:submitNumberLine(x.attempt)};if(c.type==="hint")return{kind:"number_line",attempt:requestNumberLineHint(x.attempt)};return x}
+export function exerciseStatus(x:ExerciseAttempt){return x.attempt.uiState}
