@@ -38,3 +38,16 @@ For brand-affecting code, the agent should prefer “missing approved asset” o
 
 ## Current known gap
 `MEES-BRAND-WORDMARK-001` and `MEES-BRAND-LOGO-HORIZONTAL-001` are planned but are not currently present as production files. The UI therefore uses the approved bird-head asset plus a temporary typed label. This fallback must be replaced when the approved custom wordmark is exported.
+
+
+## Visual System v2 transition lock
+
+Visual System v1 is now legacy for visual styling. Visual System v2 is an active exploration, not yet a production replacement.
+
+During this transition:
+- do not create new V1-style glossy/3D mascot assets;
+- do not silently migrate production screens to V2;
+- do not reinterpret the user-supplied reference as an approved logo, mascot or screen template;
+- preserve approved UX behavior, learning architecture and non-gamification rules;
+- new V2 visual assets stay `review` until the V2 approval gate is passed;
+- production migration begins only after the mascot, brand lockup, core UI language, Home reference and Focus Mode reference are approved together.
