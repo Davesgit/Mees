@@ -256,3 +256,31 @@ Frozen principles:
 Future Home changes should be driven by usability, accessibility, age-band adaptation or validated learning needs, not decorative churn.
 
 Next production focus: carry this visual language into Focus Mode and the first mathematics exercise flow.
+
+
+## 15. Calm mascot refinement — REVIEW DIRECTION 2026-09-30
+
+A user-supplied mobile-app reference established a useful refinement target for visual calm. It is **not** a new Mees style and must not be copied as branding.
+
+### What may be learned from the reference
+- simpler, more graphic mascot rendering;
+- fewer glossy/3D effects and fewer micro-details;
+- clear color fields and silhouette;
+- generous whitespace around the character;
+- a small seated/learning pose can feel calmer than a large expressive render.
+
+### What must remain Mees
+- canonical crest, eyes, blue/cream color relationship, orange/yellow beak and established proportions;
+- approved logo structure and wordmark rules;
+- the B/C/D visual system and age progression;
+- contextual props only when meaningful.
+
+### Explicit non-goals
+- do not copy the reference bird;
+- do not adopt its generic mobile UI as the Mees design system;
+- do not introduce progress rings, trophies, stars, goals, reward meters or other gamification shown in the reference;
+- do not replace approved production assets before a refined candidate is explicitly approved.
+
+Working principle: **Mees may be rich in worlds, but calm in form.**
+
+A calmer mascot candidate must enter the asset registry as `review`. It becomes canonical only after explicit human approval.
