@@ -105,7 +105,6 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 .mees-button--secondary:hover:not(:disabled) { background: var(--mees-surface-soft); }
 .mees-button--quiet { background: transparent; border-color: transparent; color: var(--mees-muted); }
 .mees-button:focus-visible,
-.mees-home-nav button:focus-visible,
 .mees-subject-card:focus-visible,
 .number-line-controls button:focus-visible {
   outline: 3px solid var(--mees-focus-ring);
@@ -114,29 +113,6 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 
 /* Home */
 .mees-home-header { margin-bottom: 24px; }
-.mees-home-nav {
-  display: flex;
-  gap: 3px;
-  margin-left: auto;
-  padding: 3px;
-  border: 1px solid var(--mees-border);
-  border-radius: 13px;
-  background: var(--mees-surface);
-}
-.mees-home-nav button {
-  min-height: 38px;
-  padding: 7px 12px;
-  border: 0;
-  border-radius: 9px;
-  background: transparent;
-  color: var(--mees-muted);
-  font-size: .84rem;
-  font-weight: 750;
-}
-.mees-home-nav button.is-active {
-  background: #edf5ff;
-  color: var(--mees-text);
-}
 .mees-home { display: grid; gap: 20px; }
 .mees-home-hero {
   display: grid;
@@ -235,6 +211,9 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 .mees-subject-copy { display: grid; gap: 4px; }
 .mees-subject-copy strong { font-size: 1.02rem; }
 .mees-subject-copy small { color: var(--mees-muted); font-size: .82rem; font-weight: 650; }
+.mees-subject-card.is-coming-soon { cursor: default; }
+.mees-subject-card.is-coming-soon:hover { border-color: var(--mees-border); transform: none; }
+.mees-coming-soon { width: fit-content; margin-top: 3px; padding: 3px 7px; border-radius: 7px; background: rgba(255,255,255,.7); color: var(--mees-muted); font-size: .68rem; font-weight: 800; letter-spacing: .02em; }
 .mees-home-note {
   display: flex;
   align-items: center;
@@ -490,8 +469,6 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 @media (max-width: 650px) {
   .mees-shell { padding: 16px 16px 48px; }
   .mees-home-header { flex-wrap: wrap; }
-  .mees-home-nav { order: 3; width: 100%; margin-left: 0; }
-  .mees-home-nav button { flex: 1; }
   .mees-profile { margin-left: auto; }
   .mees-subject-grid { grid-template-columns: 1fr; }
   .mees-today { align-items: stretch; flex-direction: column; }
