@@ -116,3 +116,16 @@ A replacement happy pose must preserve normal Mees anatomy and proportions. Happ
 ## Final V2 mascot expression rule
 
 The latest V2 direction is approved for production migration. All mascot poses keep the same canonical open-eye design and proportions. Expression is communicated through posture, head angle, wing position, stance and subtle contextual accent marks. The rendering direction is calm, flat or softly shaded, with rounded silhouettes, generous whitespace, restrained pastel accents and simple educational UI. Concept boards remain references; individual production assets require their own registry entry and visual QA.
+
+
+## Production migration checkpoint 1
+
+Home has begun migration to V2. The scenic mountain hero has been removed from the default Home composition. Until the approved V2 mascot production asset exists, Home uses only the existing approved compact brand head in a restrained abstract shape. This is an intentional bridge, not a new mascot design.
+
+The Home implementation now follows these V2 rules:
+- whitespace and light surfaces over scenery;
+- no reward-style reassurance badge;
+- subject cards use restrained pastel surfaces;
+- borders and spacing provide hierarchy instead of large shadows;
+- mascot presence is small and supportive;
+- old V1 subject illustrations may remain temporarily during staged migration and must be replaced by approved V2 assets later.
