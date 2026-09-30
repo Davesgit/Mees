@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "purpose": "synthetic_engine_test_data_not_final_curriculum",
+  "subject": "rekenen",
+  "learning_goals": [
+    {
+      "id": "LG-TEST-001",
+      "title": "Optellen tot 10",
+      "description": "Twee positieve gehele getallen optellen met uitkomst tot en met 10.",
+      "success_criteria": [
+        "Lost passende sommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-002",
+      "title": "Splitsingen van 10",
+      "description": "Getallen tot 10 aanvullen en splitsen rond 10.",
+      "success_criteria": [
+        "Herkent en gebruikt passende splitsingen van 10."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-003",
+      "title": "Optellen over het tiental tot 20",
+      "description": "Optellen waarbij een tientalgrens wordt overschreden, met uitkomst tot en met 20.",
+      "success_criteria": [
+        "Lost gevarieerde tientaloverschrijdende sommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-004",
+      "title": "Aftrekken tot 10",
+      "description": "Aftrekken met positieve gehele getallen binnen 10.",
+      "success_criteria": [
+        "Lost passende aftreksommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-005",
+      "title": "Aftrekken over het tiental tot 20",
+      "description": "Aftrekken waarbij de tientalgrens wordt gepasseerd binnen 20.",
+      "success_criteria": [
+        "Lost gevarieerde tientalpasserende aftreksommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-006",
+      "title": "Optellen tot 100 zonder tientaloverschrijding",
+      "description": "Optellen binnen 100 zonder overschrijding naar een volgend tiental.",
+      "success_criteria": [
+        "Lost passende sommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-007",
+      "title": "Optellen tot 100 met tientaloverschrijding",
+      "description": "Optellen binnen 100 waarbij een tiental wordt overschreden.",
+      "success_criteria": [
+        "Lost passende sommen zelfstandig op en kan passende representaties gebruiken."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-008",
+      "title": "Aftrekken tot 100 zonder tientalpassage",
+      "description": "Aftrekken binnen 100 zonder passage van een tiental.",
+      "success_criteria": [
+        "Lost passende sommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-009",
+      "title": "Aftrekken tot 100 met tientalpassage",
+      "description": "Aftrekken binnen 100 waarbij een tiental wordt gepasseerd.",
+      "success_criteria": [
+        "Lost passende sommen zelfstandig op."
+      ],
+      "status": "test"
+    },
+    {
+      "id": "LG-TEST-010",
+      "title": "Getallen plaatsen op een getallenlijn tot 100",
+      "description": "Getallen tot 100 lokaliseren en interpreteren op een getallenlijn.",
+      "success_criteria": [
+        "Plaatst en leest getallen op verschillende passende getallenlijnen."
+      ],
+      "status": "test"
+    }
+  ],
+  "relations": [
+    {
+      "from": "LG-TEST-001",
+      "to": "LG-TEST-003",
+      "type": "required_prerequisite",
+      "rationale": "Basisoptellen ondersteunt optellen over het tiental."
+    },
+    {
+      "from": "LG-TEST-002",
+      "to": "LG-TEST-003",
+      "type": "supporting_prerequisite",
+      "rationale": "Splitsingen rond 10 kunnen tientaloverschrijding ondersteunen."
+    },
+    {
+      "from": "LG-TEST-004",
+      "to": "LG-TEST-005",
+      "type": "required_prerequisite",
+      "rationale": "Basisaftrekken ondersteunt aftrekken over het tiental."
+    },
+    {
+      "from": "LG-TEST-003",
+      "to": "LG-TEST-006",
+      "type": "progression",
+      "rationale": "Verdere uitbreiding van optellen naar grotere getallen."
+    },
+    {
+      "from": "LG-TEST-006",
+      "to": "LG-TEST-007",
+      "type": "required_prerequisite",
+      "rationale": "Plaatswaarde en optellen binnen 100 zonder overschrijding vormen een relevante basis."
+    },
+    {
+      "from": "LG-TEST-005",
+      "to": "LG-TEST-008",
+      "type": "progression",
+      "rationale": "Verdere uitbreiding van aftrekken naar grotere getallen."
+    },
+    {
+      "from": "LG-TEST-008",
+      "to": "LG-TEST-009",
+      "type": "required_prerequisite",
+      "rationale": "Aftrekken binnen 100 zonder passage vormt een relevante basis."
+    },
+    {
+      "from": "LG-TEST-010",
+      "to": "LG-TEST-007",
+      "type": "supporting_prerequisite",
+      "rationale": "Getallenlijnbegrip kan als representatie ondersteuning geven."
+    },
+    {
+      "from": "LG-TEST-010",
+      "to": "LG-TEST-009",
+      "type": "supporting_prerequisite",
+      "rationale": "Getallenlijnbegrip kan als representatie ondersteuning geven."
+    }
+  ],
+  "notes": [
+    "Deze doelen zijn uitsluitend ontworpen om de engine te testen.",
+    "Ze zijn niet gevalideerd als definitieve Nederlandse curriculumindeling.",
+    "Groepskoppelingen worden bewust nog niet als harde gates gebruikt."
+  ]
+}
