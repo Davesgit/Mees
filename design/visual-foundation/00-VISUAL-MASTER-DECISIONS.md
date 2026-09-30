@@ -237,3 +237,22 @@ No stars, badges, XP, points, streaks, trophies, rankings, reward percentages, c
 
 ### Background restraint
 Rich illustration is concentrated in Home/discovery and subject cards. Active learning tasks, hints and explanations use plain or subtly tinted surfaces without scenic clutter.
+
+
+## Home v1 — frozen 2026-09-30
+
+The production Home direction for the middle age band (groups 5–6) is approved as the baseline implementation.
+
+Frozen principles:
+- one restrained illustrated hero with Mees and landscape;
+- a clear 'Voor jou vandaag' route before free subject choice;
+- four pastel subject cards using the approved subject illustration family;
+- subject artwork supports recognition but does not dominate card text;
+- no stars, badges, percentages, streaks, points or reward meters;
+- calm functional feedback such as 'Goed bezig!';
+- compact, contextual navigation on Home;
+- whitespace remains an active part of the visual system.
+
+Future Home changes should be driven by usability, accessibility, age-band adaptation or validated learning needs, not decorative churn.
+
+Next production focus: carry this visual language into Focus Mode and the first mathematics exercise flow.
