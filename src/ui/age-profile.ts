@@ -6,7 +6,7 @@ export interface MeesAgeProfile {
   mascotScale: "large" | "medium" | "small";
   illustrationDensity: "rich" | "balanced" | "restrained";
   contentDensity: "low" | "medium" | "higher";
-  taskBackdrop: "plain" | "plain";
+  taskBackdrop: "plain";
 }
 
 export const MEES_AGE_PROFILES: Record<MeesAgeBand, MeesAgeProfile> = {
