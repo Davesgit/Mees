@@ -350,3 +350,58 @@
  .mees-home-hero .bird-wrap{width:120px;opacity:.18}
  .mees-home-hero-copy{max-width:100%}
 }
+
+
+/* HOME DESIGN MATCH V2 — approved middle-band direction */
+.mees-age--middle .mees-home{gap:28px;margin-top:18px}
+.mees-age--middle .mees-home-hero{
+ min-height:300px;
+ grid-template-columns:minmax(0,1fr) 390px;
+ padding:42px 46px;
+ background:#eef6f1;
+ box-shadow:0 12px 30px rgba(32,65,66,.07);
+}
+.mees-age--middle .mees-hero-scene{
+ left:auto;
+ width:46%;
+ object-position:58% center;
+ opacity:.86;
+ -webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 28%,#000 100%);
+ mask-image:linear-gradient(90deg,transparent 0%,#000 28%,#000 100%);
+}
+.mees-age--middle .mees-hero-wash{
+ background:linear-gradient(90deg,#f4f8f3 0%,rgba(244,248,243,.98) 45%,rgba(244,248,243,.58) 63%,rgba(244,248,243,.04) 100%);
+}
+.mees-age--middle .mees-home-hero-copy{max-width:570px}
+.mees-age--middle .mees-home-hero h1{font-size:clamp(2.35rem,4vw,3.25rem);max-width:560px;letter-spacing:-.035em}
+.mees-age--middle .mees-home-hero p:last-child{max-width:500px;font-size:1rem;line-height:1.55}
+.mees-age--middle .mees-home-hero .bird-wrap{
+ position:absolute;
+ right:34px;
+ bottom:-20px;
+ width:205px;
+ margin:0;
+}
+.mees-age--middle .mees-today{
+ padding:22px 26px;
+ border-color:rgba(31,63,75,.08);
+ box-shadow:0 8px 24px rgba(32,65,66,.055);
+}
+.mees-age--middle .mees-subject-mark{width:60px;height:60px;border-radius:16px}
+.mees-age--middle .mees-home-section{padding-top:2px}
+.mees-age--middle .mees-section-heading{margin-bottom:14px}
+.mees-age--middle .mees-subject-grid{gap:14px}
+.mees-age--middle .mees-subject-card{
+ min-height:128px;
+ padding:18px;
+ border-radius:20px;
+ box-shadow:none;
+}
+.mees-age--middle .mees-subject-card:hover{transform:none;box-shadow:0 8px 20px rgba(32,65,66,.05)}
+.mees-age--middle .subject-art{width:88px;height:88px;right:-12px;bottom:-15px;opacity:.16}
+.mees-age--middle .mees-home-note{background:#eef3f0;min-height:120px}
+@media(max-width:800px){
+ .mees-age--middle .mees-home-hero{grid-template-columns:1fr;padding:34px 28px;min-height:280px}
+ .mees-age--middle .mees-hero-scene{width:60%;opacity:.48}
+ .mees-age--middle .mees-home-hero .bird-wrap{right:12px;width:145px;opacity:.55}
+}
