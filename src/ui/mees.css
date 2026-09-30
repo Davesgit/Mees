@@ -831,3 +831,53 @@
  .mees-age--middle.mees-focus-mode .mees-exercise-card>h1{font-size:2rem}
  .mees-age--middle.mees-focus-mode .basic-answer input{width:100%;min-height:62px}
 }
+
+
+/* FOCUS STATES V1 — hint, retry, success and continue */
+.mees-focus-mode .mees-feedback{
+  display:flex;
+  align-items:flex-start;
+  gap:13px;
+  max-width:560px;
+}
+.mees-focus-mode .mees-feedback strong{display:block;margin:1px 0 4px}
+.mees-focus-mode .mees-feedback p{margin:0;color:#5f7072;font-weight:600}
+.mees-feedback-icon{
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  font-weight:900;
+}
+.mees-focus-mode .mees-feedback--hint .mees-feedback-icon{
+  background:#f7e5bd;
+  color:#986b29;
+}
+.mees-focus-mode .mees-feedback--retry{
+  background:#f7f4ed;
+  border:1px solid #e8e0d2;
+  border-left:4px solid #b99b6a;
+}
+.mees-focus-mode .mees-feedback--retry .mees-feedback-icon{
+  background:#eee6d8;
+  color:#7c6847;
+}
+.mees-focus-mode .mees-feedback--success{
+  background:#edf6f1;
+  border:1px solid #d5e7dd;
+  border-left:4px solid #69a083;
+}
+.mees-focus-mode .mees-feedback--success .mees-feedback-icon{
+  background:#dbece3;
+  color:#3f755b;
+}
+.mees-focus-mode .mees-feedback--success + *{margin-top:18px}
+.mees-focus-mode .mees-actions .mees-button--primary{
+  transition:background var(--mees-motion-normal) ease,transform var(--mees-motion-fast) ease;
+}
+@media(max-width:600px){
+ .mees-focus-mode .mees-feedback{max-width:none}
+ .mees-feedback-icon{width:30px;height:30px}
+}
