@@ -125,3 +125,43 @@ An asset is done only when:
 - master and web formats exist where applicable;
 - it is entered in ASSET-LIBRARY.md;
 - visual QA is approved.
+
+
+## Approved P0 visual set — 2026-09-30
+
+The latest reviewed P0 asset direction is approved as the production target.
+
+### Brand
+- MEES-BRAND-HEAD-001 — compact Mees
+- MEES-BRAND-LOGO-HORIZONTAL-001 — compact Mees + wordmark
+- MEES-BRAND-APPICON — required at 1024, 512, 256 and 128 px
+- MEES-BRAND-FAVICON — compact small-size mark
+
+### Character
+- MEES-MASCOT-BASE-001
+- MEES-MASCOT-WAVE-001
+- MEES-MASCOT-CURIOUS-001
+- MEES-MASCOT-THINKING-001
+- MEES-MASCOT-EXPLAIN-001
+- MEES-MASCOT-BOOK-001
+- MEES-MASCOT-BACKPACK-001
+- MEES-MASCOT-HAPPY-001
+- MEES-MASCOT-WINK-001
+- MEES-MASCOT-SURPRISED-001
+- MEES-MASCOT-EXCITED-001
+- MEES-MASCOT-CALM-001
+- MEES-MASCOT-SLEEP-001
+- MEES-MASCOT-CELEBRATE-001
+
+### Props / contextual illustration
+- lightbulb
+- magnifier
+- book
+- backpack
+- cap
+
+### Important correction
+The generated sheet also contained star/check/cross/question symbols. These are **not automatically approved as product UI icons**. Mees avoids generic reward/gamification patterns and negative “wrong” signaling. Functional UI icons must follow the UI component/icon system and educational interaction rules.
+
+### Production requirement
+Approval of the visual set does not mean individual binary assets already exist in the repository. Each production asset must still be exported as its own transparent file, visually checked, registered in ASSET-LIBRARY.md and only then marked approved for implementation.
