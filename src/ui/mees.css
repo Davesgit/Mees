@@ -490,3 +490,93 @@
  }
  .mees-subject-copy{padding-top:0}
 }
+
+
+/* HOME VISUAL QA V3 — compact hero, warmer today card, calmer handoff */
+.mees-age--middle .mees-home{gap:24px}
+.mees-age--middle .mees-home-hero{
+  min-height:264px;
+  padding:34px 42px;
+  border-radius:22px;
+  box-shadow:0 9px 25px rgba(32,65,66,.055);
+}
+.mees-age--middle .mees-home-hero h1{
+  font-size:clamp(2.15rem,3.6vw,2.85rem);
+  max-width:500px;
+  margin-bottom:10px;
+}
+.mees-age--middle .mees-home-hero p:last-child{max-width:470px}
+.mees-age--middle .mees-hero-scene{
+  width:47%;
+  opacity:.82;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 13%,#000 39%,#000 100%);
+  mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.25) 13%,#000 39%,#000 100%);
+}
+.mees-age--middle .mees-hero-wash{
+  background:linear-gradient(90deg,#f5f8f3 0%,rgba(245,248,243,.985) 43%,rgba(245,248,243,.72) 57%,rgba(245,248,243,.12) 79%,rgba(245,248,243,0) 100%);
+}
+.mees-age--middle .mees-home-hero .bird-wrap{
+  width:210px;
+  right:28px;
+  bottom:-8px;
+}
+.mees-profile{
+  background:transparent;
+  border-color:rgba(38,59,61,.12);
+  color:#657477;
+  padding:8px 13px;
+  font-size:13px;
+}
+.mees-age--middle .mees-today{
+  min-height:132px;
+  padding:18px 22px 18px 18px;
+  border-radius:20px;
+  background:linear-gradient(105deg,#fff 0%,#fffdf8 100%);
+  border-color:rgba(31,63,75,.075);
+  box-shadow:0 7px 20px rgba(32,65,66,.045);
+}
+.mees-today-art{
+  position:relative;
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:94px;
+  height:94px;
+  overflow:hidden;
+  border-radius:18px;
+  background:#eaf6ec;
+}
+.mees-today-art img{
+  width:108px;
+  height:92px;
+  object-fit:contain;
+  transform:translateY(4px);
+}
+.mees-age--middle .mees-today-copy{gap:20px}
+.mees-age--middle .mees-today h2{font-size:1.55rem;margin:1px 0 4px}
+.mees-age--middle .mees-today .mees-eyebrow{margin:0 0 2px}
+.mees-age--middle .mees-today p:last-child{font-size:.94rem;line-height:1.45}
+.mees-age--middle .mees-today .mees-button--primary{
+  min-width:136px;
+  box-shadow:0 6px 16px rgba(36,120,199,.15);
+}
+.mees-age--middle .mees-home-section{
+  padding-top:12px;
+  border-top:1px solid rgba(38,59,61,.07);
+}
+.mees-age--middle .mees-section-heading{margin-bottom:12px}
+@media(max-width:800px){
+ .mees-age--middle .mees-home-hero{min-height:245px;padding:30px 26px}
+ .mees-age--middle .mees-home-hero .bird-wrap{width:158px;right:4px}
+ .mees-age--middle .mees-hero-scene{width:62%}
+}
+@media(max-width:540px){
+ .mees-age--middle .mees-home{gap:18px}
+ .mees-age--middle .mees-home-hero{min-height:225px;padding:26px 22px}
+ .mees-age--middle .mees-home-hero h1{font-size:2rem}
+ .mees-age--middle .mees-home-hero p:last-child{font-size:.94rem}
+ .mees-profile{display:none}
+ .mees-today-art{width:82px;height:82px}
+ .mees-today-art img{width:94px;height:80px}
+ .mees-age--middle .mees-today{padding:16px}
+}
