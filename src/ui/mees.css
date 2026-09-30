@@ -204,3 +204,46 @@
   .today-card .mees-button { grid-column: 1 / -1; width: 100%; }
   .home-grid { grid-template-columns: 1fr; }
 }
+
+
+/* MEES AGE PROFILES V1
+   Richness belongs mainly to Home/Discover. Active learning remains calm. */
+.mees-age { --age-control-height: 52px; --age-card-gap: 20px; --age-mascot-scale: 1; }
+.mees-age--junior { --age-control-height: 56px; --age-card-gap: 24px; --age-mascot-scale: 1.12; }
+.mees-age--middle { --age-control-height: 52px; --age-card-gap: 20px; --age-mascot-scale: 1; }
+.mees-age--senior { --age-control-height: 48px; --age-card-gap: 16px; --age-mascot-scale: .78; }
+
+.mees-age .mees-button { min-height: var(--age-control-height); }
+.mees-age .home-grid { gap: var(--age-card-gap); }
+.mees-age .bird-wrap { transform: scale(var(--age-mascot-scale)); transform-origin: center bottom; }
+
+.mees-age--junior .welcome-hero { min-height: 340px; }
+.mees-age--junior .mini-card { min-height: 140px; }
+.mees-age--junior .mees-focus-shell { font-size: 1.05rem; }
+
+.mees-age--senior .welcome-hero {
+  min-height: 240px;
+  grid-template-columns: minmax(0,1.7fr) minmax(160px,.3fr);
+}
+.mees-age--senior .mini-card { min-height: 108px; }
+.mees-age--senior .today-card { padding: var(--mees-space-5); }
+
+/* Focus Mode deliberately removes scenic visual competition for every age band. */
+.mees-focus-mode {
+  min-height: 100vh;
+  background: var(--mees-bg);
+}
+.mees-focus-mode::before,
+.mees-focus-mode::after { content: none !important; }
+.mees-focus-mode .mees-card {
+  background: var(--mees-surface);
+  box-shadow: 0 2px 12px rgba(23,50,74,.06);
+}
+.mees-age--junior.mees-focus-mode .mees-card { border-radius: 22px; }
+.mees-age--senior.mees-focus-mode .mees-card { border-radius: 14px; box-shadow: none; }
+
+@media (max-width: 720px) {
+  .mees-age--junior .welcome-hero,
+  .mees-age--middle .welcome-hero,
+  .mees-age--senior .welcome-hero { min-height: 0; grid-template-columns: 1fr; }
+}
