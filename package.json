@@ -7,7 +7,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "sim": "tsx src/simulator/run.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "sim:profiles": "tsx src/simulator/profiles.ts"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
