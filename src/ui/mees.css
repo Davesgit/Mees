@@ -626,3 +626,162 @@
    transform:scale(.9);flex:none
  }
 }
+
+
+/* FOCUS MODE V1 — first production mathematics screen */
+.mees-focus-mode{
+  max-width:none;
+  padding:22px 24px 64px;
+  background:
+    radial-gradient(circle at 50% 0%,rgba(255,255,255,.82),transparent 38%),
+    #f8f6ef;
+}
+.mees-focus-mode .mees-session-header{
+  width:min(820px,calc(100% - 32px));
+  min-height:58px;
+  padding-bottom:14px;
+  border-bottom:1px solid rgba(38,59,61,.08);
+}
+.mees-focus-mode .brand-dot{width:34px;height:34px;border-radius:12px;font-size:20px}
+.mees-focus-mode .mees-wordmark{font-size:23px}
+.mees-focus-mode .mees-progress{
+  margin-left:auto;
+  padding:7px 11px;
+  border-radius:999px;
+  background:#fff;
+  border:1px solid rgba(38,59,61,.09);
+  color:#687779;
+  font-size:.82rem;
+}
+.mees-focus-mode .mees-stop{
+  min-height:42px;
+  padding:0 12px;
+  color:#687779;
+  border:0;
+}
+.mees-focus-mode .mees-focus-shell{
+  width:min(760px,calc(100% - 32px));
+  margin:34px auto 64px;
+  gap:16px;
+}
+.mees-focus-mode .mees-exercise-card{
+  margin:0;
+  padding:clamp(30px,5vw,48px);
+  border-radius:24px;
+  border:1px solid rgba(38,59,61,.08);
+  box-shadow:0 8px 26px rgba(38,59,61,.055);
+}
+.mees-exercise-intro{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:20px;
+  min-height:54px;
+  margin-bottom:24px;
+}
+.mees-exercise-intro .mees-eyebrow{margin:0 0 5px}
+.mees-exercise-kicker{color:var(--mees-text-muted);font-size:.9rem}
+.mees-focus-mascot{
+  width:54px;
+  height:54px;
+  object-fit:contain;
+  opacity:.9;
+}
+.mees-focus-mode .mees-exercise-card>h1{
+  max-width:610px;
+  margin:0 0 30px;
+  font-size:clamp(1.85rem,4vw,2.55rem);
+  line-height:1.18;
+  letter-spacing:-.025em;
+}
+.mees-focus-mode .basic-answer{gap:8px}
+.mees-focus-mode .basic-answer label{
+  color:#52676a;
+  font-size:.88rem;
+  font-weight:800;
+}
+.mees-focus-mode .basic-answer input{
+  width:min(290px,100%);
+  min-height:74px;
+  padding:12px 18px;
+  border:2px solid #cfdbdc;
+  border-radius:16px;
+  background:#fff;
+  color:var(--text);
+  font:800 2rem/1 var(--mees-font);
+  box-shadow:inset 0 1px 0 rgba(38,59,61,.02);
+}
+.mees-focus-mode .basic-answer input:focus{
+  border-color:var(--mees-primary);
+  outline:3px solid rgba(36,120,199,.14);
+  outline-offset:2px;
+}
+.mees-focus-mode .basic-answer span{font-size:.82rem;color:#7b898b}
+.mees-focus-mode .mees-actions{
+  margin-top:26px;
+  gap:10px;
+}
+.mees-focus-mode .mees-actions .mees-button--primary{min-width:138px}
+.mees-focus-mode .mees-actions .mees-button--secondary{
+  background:transparent;
+  border-color:#d8e0df;
+}
+.mees-focus-mode .mees-feedback{
+  margin-top:22px;
+  padding:18px 20px;
+  border-radius:16px;
+  box-shadow:none;
+  font-weight:600;
+  line-height:1.5;
+}
+.mees-focus-mode .mees-feedback--hint{
+  background:#fff7e8;
+  border:1px solid #f0dfbe;
+  border-left:4px solid #e2a956;
+}
+.mees-focus-mode .mees-feedback--explanation{
+  background:#eef6f3;
+  border:1px solid #d8e8e1;
+  border-left:4px solid #6fa58a;
+}
+.mees-focus-mode .route-note{
+  margin:0;
+  padding:13px 16px;
+  background:#edf4f5;
+  border:1px solid #dbe7e8;
+  border-radius:14px;
+  color:#536a6d;
+  font-size:.9rem;
+}
+.mees-focus-mode .number-line{
+  margin-top:4px;
+  padding:10px 0 0;
+}
+.mees-focus-mode .number-line-controls button{
+  background:#f7f8f5;
+  border-color:#dce3df;
+}
+.mees-age--junior.mees-focus-mode .mees-exercise-card{padding:34px;border-radius:26px}
+.mees-age--junior.mees-focus-mode .mees-focus-mascot{width:68px;height:68px}
+.mees-age--junior.mees-focus-mode .mees-exercise-card>h1{font-size:clamp(2rem,5vw,2.7rem)}
+.mees-age--senior.mees-focus-mode .mees-exercise-card{
+  border-radius:18px;
+  padding:38px 42px;
+  box-shadow:0 3px 14px rgba(38,59,61,.035);
+}
+.mees-age--senior.mees-focus-mode .mees-focus-mascot{width:42px;height:42px;opacity:.7}
+@media(max-width:600px){
+ .mees-focus-mode{padding:14px 12px 44px}
+ .mees-focus-mode .mees-session-header{width:100%;gap:8px}
+ .mees-focus-mode .mees-wordmark{font-size:20px}
+ .mees-focus-mode .mees-progress{font-size:.76rem;padding:6px 9px}
+ .mees-focus-mode .mees-stop{font-size:.82rem;padding:0 6px}
+ .mees-focus-mode .mees-focus-shell{width:100%;margin:20px auto 44px}
+ .mees-focus-mode .mees-exercise-card{padding:24px 20px;border-radius:20px}
+ .mees-exercise-intro{margin-bottom:18px}
+ .mees-focus-mascot{width:46px;height:46px}
+ .mees-focus-mode .mees-exercise-card>h1{font-size:1.8rem;margin-bottom:24px}
+ .mees-focus-mode .basic-answer input{width:100%}
+ .mees-focus-mode .mees-actions{display:grid;grid-template-columns:1fr 1fr}
+ .mees-focus-mode .mees-actions .mees-button{width:100%}
+}
