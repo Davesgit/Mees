@@ -126,3 +126,20 @@ The approved scene family already present in the repository remains reusable sup
 | MEES-MASCOT-CALM-BASE-001 | mascot/review/MEES-MASCOT-CALM-BASE-001.png | Simplified calm base-render candidate for comparison with current canonical character | review |
 
 These candidates may not replace `MEES-BRAND-HEAD-001` or any approved canonical brand asset until explicit approval. The user-supplied reference image is inspiration for calmness only and is not itself a Mees asset.
+
+
+## V2 production queue
+
+The approved V2 character uses one consistent eye construction in every pose.
+
+| Asset ID | Purpose | Status |
+|---|---|---|
+| MEES-V2-BRAND-HEAD-001 | Compact V2 brand mark | planned |
+| MEES-V2-MASCOT-NEUTRAL-001 | Canonical neutral full-body pose | planned |
+| MEES-V2-MASCOT-BOOKS-001 | Calm learning pose on books | planned |
+| MEES-V2-MASCOT-CURIOUS-001 | Curious pose | planned |
+| MEES-V2-MASCOT-HAPPY-001 | Positive pose | planned |
+| MEES-V2-MASCOT-THINKING-001 | Thinking pose | planned |
+| MEES-V2-MASCOT-SATISFIED-001 | Calm completion pose | planned |
+
+V1 glossy assets are legacy references during migration and are not a source for new artwork.
