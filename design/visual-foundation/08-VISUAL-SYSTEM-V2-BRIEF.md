@@ -145,3 +145,17 @@ UX corrections made during this migration:
 - the old V1 backpack hero component has been removed from application code.
 
 Temporary bridge assets remain limited to the approved compact brand head and legacy subject illustrations. No unapproved V2 mascot has been introduced into production.
+
+
+## Production migration checkpoint 3
+
+The production stylesheet has been collapsed to one V2 system. The former layered V1 token/component rules and later override blocks are no longer the runtime styling model.
+
+Additional UX cleanup:
+- Home no longer exposes inert global navigation controls;
+- Rekenen is a real entry point from both the Today card and subject card;
+- planned subjects are presented as non-interactive “Binnenkort” content rather than fake buttons;
+- Brand/Header styling now comes from the same V2 token layer;
+- the V2 design-token document is the active production reference.
+
+This checkpoint deliberately keeps legacy subject artwork as temporary content assets. Replacing illustration files remains a separate visual-QA step.
