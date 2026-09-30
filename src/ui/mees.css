@@ -1179,3 +1179,18 @@
 @media(prefers-reduced-motion:reduce){
  .mees-focus-mode .mees-feedback{animation:none}
 }
+
+
+/* BRAND LOCK V1
+   Approved compact bird asset is canonical.
+   Typed wordmark is a temporary fallback only until the approved custom wordmark asset exists. */
+.brand{display:inline-flex;align-items:center;gap:9px}
+.mees-brand-head{display:block;width:40px;height:40px;object-fit:contain}
+.brand-dot{display:none!important}
+.mees-wordmark--temporary{
+  color:var(--mees-text,#17324a);
+  font-family:"Nunito Sans",ui-rounded,system-ui,sans-serif;
+  font-size:26px;
+  font-weight:850;
+  letter-spacing:-.7px;
+}
