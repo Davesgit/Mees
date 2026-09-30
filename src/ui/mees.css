@@ -294,3 +294,33 @@
  .mees-subject-grid,.mees-age--junior .mees-subject-grid{grid-template-columns:1fr}.mees-subject-card{min-height:104px;flex-direction:row;align-items:center;justify-content:flex-start;gap:14px}
  .mees-home-note{align-items:flex-start;flex-direction:column}
 }
+
+
+/* MEES VISUAL HOME PASS 1 */
+.mees-home-hero { isolation:isolate; background:linear-gradient(180deg,#dff1f7 0%,#eef7ef 68%,#f6f1df 100%); }
+.mees-home-hero-copy,.mees-home-hero .bird-wrap { z-index:3; }
+.mees-scenery { position:absolute; inset:0; overflow:hidden; z-index:0; pointer-events:none; opacity:.72; }
+.mees-scenery .sun { position:absolute; width:72px; height:72px; border-radius:50%; right:12%; top:14%; background:rgba(255,211,112,.52); box-shadow:0 0 0 18px rgba(255,228,159,.14); }
+.hill { position:absolute; display:block; border-radius:50% 50% 0 0; }
+.hill-back { width:64%; height:44%; right:-8%; bottom:-13%; background:#b8d9c3; transform:rotate(-3deg); }
+.hill-front { width:72%; height:38%; right:10%; bottom:-18%; background:#91c4a3; transform:rotate(4deg); }
+.tree { position:absolute; width:18px; height:72px; bottom:13%; background:#8d765d; border-radius:9px; }
+.tree:before,.tree:after { content:""; position:absolute; left:50%; transform:translateX(-50%); border-radius:50%; background:#6fa383; }
+.tree:before { width:62px; height:70px; top:-42px; }
+.tree:after { width:48px; height:56px; top:-66px; background:#7fb08f; }
+.tree-a { right:29%; transform:scale(.72); opacity:.65; }.tree-b { right:8%; transform:scale(.52); opacity:.45; }
+
+.mees-subject-card { position:relative; overflow:hidden; isolation:isolate; transition:transform var(--mees-motion-fast) ease, box-shadow var(--mees-motion-normal) ease; }
+.mees-subject-card:hover { transform:translateY(-2px); box-shadow:var(--mees-shadow-1); }
+.mees-subject-card > span:not(.subject-art) { position:relative; z-index:2; }
+.subject-art { position:absolute; z-index:0; right:-8px; bottom:-12px; width:112px; height:112px; border-radius:50%; display:flex; align-items:center; justify-content:center; gap:4px; opacity:.28; transform:rotate(-7deg); background:rgba(255,255,255,.72); }
+.subject-art i { font-style:normal; font-weight:900; font-size:1.45rem; color:var(--mees-text); }
+.subject-art-language i { font-size:2.1rem; }.subject-art-world i,.subject-art-creative i { font-size:2.5rem; }
+.mees-age--junior .subject-art { opacity:.38; width:132px; height:132px; }
+.mees-age--senior .subject-art { opacity:.16; width:90px; height:90px; }
+
+.mees-age--senior .mees-scenery { opacity:.34; }
+.mees-age--senior .tree { display:none; }
+.mees-age--junior .mees-scenery { opacity:.82; }
+
+@media(max-width:720px){ .mees-scenery{opacity:.42}.tree-b{display:none}.subject-art{opacity:.18} }
