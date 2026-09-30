@@ -46,3 +46,41 @@ Create four subject identity illustrations that can sit on Home/Discover cards:
 - Creatief
 
 Subject illustrations should use objects/scenes rather than embedding labels. Labels remain real UI text.
+
+
+## Subject identity direction
+
+The first subject illustration family follows the same world as the environment library. Subjects are communicated through objects and Mees in context, never by baked-in text.
+
+- MEES-SUBJECT-MATH-001 — concrete numbers, abacus, shapes / mathematical exploration.
+- MEES-SUBJECT-READING-001 — books and reading.
+- MEES-SUBJECT-WORLD-001 — magnifier, globe, compass, nature observation.
+- MEES-SUBJECT-CREATIVE-001 — drawing/painting/material exploration.
+- MEES-SUBJECT-TECH-001 — digital making/technology, used selectively rather than as a default subject.
+
+### Character consistency warning
+Concept boards are composition/style references, not character masters. Any Mees shown in a concept board must not replace MEES-MASCOT-BASE-001. Production subject illustrations must use the approved Mees character master as the character reference. Do not accept drift in crest, eyes, beak, body proportions, colors or anatomy.
+
+## World-building props
+
+Reusable environment props may include:
+- tree / conifers
+- rocks
+- wooden signpost
+- stump
+- small bridge / creek
+- rope or wooden fence
+- dune grass / sand
+- lighthouse rock/island
+
+Props remain independent from UI semantics. A decorative signpost, for example, is not a navigation control.
+
+## Atmosphere variants
+
+Season and time-of-day variants are optional expansion assets, not separate visual systems:
+- summer/day is the canonical baseline
+- autumn and winter can support contextual content
+- sunset/night are special narrative or world-orientation variants
+- do not change a child's core learning interface merely for seasonal novelty
+
+All variants must preserve legibility and Focus Mode calmness.
