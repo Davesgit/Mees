@@ -1357,3 +1357,113 @@ body{background:var(--mees-v2-canvas);color:var(--mees-v2-text)}
  .mees-v2-hero-mark{display:none}
  .mees-home-note{align-items:flex-start;flex-direction:column}
 }
+
+
+/* V2 FOCUS + CLOSURE — content first */
+.mees-focus-mode{
+  max-width:980px;
+  min-height:100vh;
+  background:var(--mees-v2-canvas);
+}
+.mees-session-header{
+  max-width:760px;
+  margin:0 auto;
+  padding:4px 0 18px;
+  border-bottom:1px solid var(--mees-v2-border);
+}
+.mees-session-header .brand{
+  transform:scale(.92);
+  transform-origin:left center;
+}
+.mees-progress{
+  color:var(--mees-v2-muted);
+  font-size:.86rem;
+  font-weight:750;
+}
+.mees-stop{
+  min-height:42px;
+  padding:8px 12px;
+  border-color:transparent;
+  color:var(--mees-v2-muted);
+}
+.mees-focus-shell{
+  max-width:760px;
+  margin:0 auto;
+  padding-top:28px;
+}
+.mees-focus-mode .mees-exercise-card{
+  margin-top:0;
+  padding:clamp(26px,5vw,44px);
+  border:1px solid var(--mees-v2-border);
+  border-radius:18px;
+  background:#fff;
+}
+.mees-focus-mode .mees-exercise-intro{
+  min-height:0;
+  margin-bottom:18px;
+}
+.mees-focus-mode .mees-exercise-card>h1{
+  max-width:650px;
+  color:var(--mees-v2-text);
+  letter-spacing:-.025em;
+}
+.mees-focus-mode .mees-exercise-kicker,
+.mees-focus-mode .basic-answer span,
+.mees-focus-mode .number-line-help{
+  color:var(--mees-v2-muted);
+}
+.mees-focus-mode .route-note{
+  margin:0 0 14px;
+  border:1px solid #d8e7f4;
+  border-radius:14px;
+  background:#f2f8fd;
+}
+.mees-focus-mode .number-line{
+  border-color:var(--mees-v2-border);
+  border-radius:14px;
+  background:#fbfdff;
+}
+.mees-focus-mode .number-line-controls button{
+  border-color:var(--mees-v2-border);
+  border-radius:10px;
+  color:var(--mees-v2-text);
+  background:#fff;
+}
+.mees-focus-mode .number-line-controls .jump-ten{background:#f1f6fc}
+.mees-focus-mode .number-line-controls button:hover:not(:disabled){background:#f4f8fd}
+.mees-focus-mode .mees-feedback--retry{
+  border:1px solid #d3e9f6;
+  border-left:1px solid #d3e9f6;
+}
+.mees-focus-mode .mees-feedback--success{
+  border:1px solid #cfe9db;
+  border-left:1px solid #cfe9db;
+}
+.mees-done{
+  min-height:100vh;
+  background:var(--mees-v2-canvas);
+}
+.mees-done .mees-finish{
+  width:min(580px,calc(100% - 32px));
+  margin:72px auto 16px;
+  padding:42px;
+  border:1px solid var(--mees-v2-border);
+  border-radius:18px;
+  box-shadow:none;
+}
+.mees-finish-mascot{
+  width:54px;
+  height:54px;
+  top:30px;
+  right:32px;
+}
+.mees-done .mees-finish>h1{color:var(--mees-v2-text)}
+.mees-done .mees-finish>p:not(.mees-eyebrow),
+.mees-finish-note{color:var(--mees-v2-muted)}
+.mees-finish-summary{display:none}
+@media(max-width:600px){
+ .mees-session-header{padding-bottom:12px}
+ .mees-focus-shell{padding-top:18px}
+ .mees-focus-mode .mees-exercise-card{padding:24px 20px}
+ .mees-done .mees-finish{margin-top:32px;padding:34px 24px}
+}
