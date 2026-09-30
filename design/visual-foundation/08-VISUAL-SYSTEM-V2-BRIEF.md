@@ -94,3 +94,20 @@ Approve these together:
 7. one math Focus Mode reference.
 
 Only after this gate may V2 replace production V1 styling.
+
+
+## Review decision — 2026-09-30
+
+The current V2 board is approved as the working visual direction with one explicit rejection:
+- the current **happy / blije pose** is rejected and must not be used as a mascot reference or production asset.
+
+Everything else on the board is accepted as the basis for the next refinement pass, subject to the existing rule that concept-board artwork is not automatically a production asset.
+
+### Happy pose correction
+A replacement happy pose must preserve normal Mees anatomy and proportions. Happiness should come primarily from expression and posture, not from distorting the body:
+- keep the canonical head/body silhouette;
+- keep normal wing placement and scale;
+- use a warm open/bright expression;
+- a subtle upward wing gesture is allowed;
+- avoid oversized spread wings, strange limb placement, extreme deformation or a celebratory/reward pose;
+- the result should read as friendly and pleased, not as a trophy/celebration character.
