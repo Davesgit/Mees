@@ -54,7 +54,7 @@ public/assets/mees/
 |---|---|---|---|
 | MEES-BRAND-LOGO-HORIZONTAL-001 | brand/logo-horizontal | Primary logo | planned |
 | MEES-BRAND-WORDMARK-001 | brand/wordmark | Text-only brand mark | planned |
-| MEES-BRAND-HEAD-001 | brand/mascot-head | Standalone brand mark | planned |
+| MEES-BRAND-HEAD-001 | MEES-BRAND-HEAD-001.png | Standalone compact brand/hero mark | approved |
 | MEES-BRAND-APPICON-LIGHT-001 | brand/app-icon-light | App icon light | planned |
 | MEES-BRAND-APPICON-DARK-001 | brand/app-icon-dark | App icon dark | planned |
 | MEES-BRAND-FAVICON-001 | brand/favicon | Browser favicon | planned |
@@ -101,3 +101,18 @@ Mees has two canonical base forms:
 - `MEES-BRAND-HEAD-001`: compact head/body mark without legs or feet for logo lockups, app icon, favicon, small avatar and compact UI use.
 
 The compact form is not a different character. It must preserve the same crest, eyes, blue/cream coloring, beak and facial proportions as the canonical Mees.
+
+
+## Visual System v1 production queue — APPROVED DIRECTION
+
+The following individual assets are required to implement the approved group 5–6 Home reference. Concept-board crops are not canonical production files.
+
+| Asset ID | Intended file | Purpose | Status |
+|---|---|---|---|
+| MEES-MASCOT-HERO-BACKPACK-001 | mascot/context/MEES-MASCOT-HERO-BACKPACK-001.png | Home discovery hero | review |
+| MEES-SUBJECT-MATH-001 | illustrations/subjects/MEES-SUBJECT-MATH-001.webp | Rekenen subject card | review |
+| MEES-SUBJECT-READING-001 | illustrations/subjects/MEES-SUBJECT-READING-001.webp | Taal & lezen subject card | review |
+| MEES-SUBJECT-NATURE-001 | illustrations/subjects/MEES-SUBJECT-NATURE-001.webp | Wereld & natuur subject card | review |
+| MEES-SUBJECT-CREATIVE-001 | illustrations/subjects/MEES-SUBJECT-CREATIVE-001.webp | Creatief subject card | review |
+
+The approved scene family already present in the repository remains reusable supporting scenery. Subject-card art must be exported as individual production assets before it is wired into UI.
