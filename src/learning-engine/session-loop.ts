@@ -1,0 +1,6 @@
+import type{LearningGoalRelation}from"../domain/types.js";import{planNextStep}from"./session-engine.js";import type{SelectableQuestion}from"./question-selector.js";import{reduceSession,type SessionState}from"./session-state.js";
+export interface LoopDependencies{questions:SelectableQuestion[];relations:LearningGoalRelation[]}
+export function nextSessionState(state:SessionState,deps:LoopDependencies){if(state.status==="ended")return{state,plan:null};const plan=planNextStep({goalId:state.activeGoalId,events:state.events,interventions:state.interventions,relations:deps.relations,questions:deps.questions,knownStates:state.knownStates,usage:{meaningfulBlocks:state.meaningfulBlocks,attemptsOnSameBottleneck:state.attemptsOnSameBottleneck}});
+if(plan.action.type==="end_session")return{state:reduceSession(state,{type:"end_session"}),plan};
+let next=state;if(plan.action.type==="check_prerequisite"&&plan.action.targetGoalId&&plan.action.targetGoalId!==state.activeGoalId)next=reduceSession(next,{type:"enter_prerequisite",goalId:plan.action.targetGoalId});if(plan.question)next=reduceSession(next,{type:"present_question",questionId:plan.question.id});return{state:next,plan}}
+export function returnFromPrerequisite(state:SessionState){return reduceSession(state,{type:"return_to_previous_goal"})}
