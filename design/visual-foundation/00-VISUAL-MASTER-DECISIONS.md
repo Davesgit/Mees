@@ -197,3 +197,18 @@ For important screens:
 ## 12. Next decision
 
 Define the **Mees UI form language and navigation system**, including how the same components evolve gradually from group 3 to group 8.
+
+
+## 13. Mees Outline — APPROVED
+
+The soft white contour around Mees is an intentional part of the visual language.
+
+Rules:
+- Keep a clean master asset without outline where practical.
+- Provide an official UI/display variant with a consistent soft white contour.
+- Use the outline especially on illustrated, colored or visually busy backgrounds.
+- On white/light cards the outline may be reduced or omitted when it creates a double-border effect.
+- Do not improvise outline width/style per screen.
+- Logo and app-icon variants are treated separately for contrast and do not automatically inherit the mascot outline.
+
+Asset naming may use suffixes such as `-clean` and `-outline` when both production variants exist.
