@@ -116,17 +116,16 @@ Math/numeric UI uses the same family where practical, with suitable weight and t
 
 The Mees wordmark is a custom brand asset and must not be recreated by simply typing “Mees” in Nunito Sans.
 
-## 7. Navigation/layout — NOT YET APPROVED
+## 7. Navigation/layout — APPROVED PRINCIPLE
 
-Sidebars shown in concept boards are examples only. They are **not** approved navigation architecture.
+Navigation follows **Contextual Navigation + Focus Mode**:
+- Home/overview: navigation is visible and compact.
+- Active exercise, hint, explanation or focused task: global navigation disappears.
+- Essential session controls, progress and a clear stop/leave action remain.
+- Younger groups use fewer visible choices; older groups may carry slightly denser navigation.
+- A persistent sidebar is not assumed.
 
-Navigation must be designed separately for:
-- phone;
-- tablet;
-- laptop/desktop;
-- younger and older groups.
-
-A permanent sidebar should not be assumed. Candidate patterns to evaluate include bottom navigation, compact top navigation, home-card navigation and responsive combinations.
+Core rule: navigation appears when the child needs to choose where to go, and disappears when the child already knows what they are doing.
 
 ## 8. UI DNA — NEXT DECISION
 
@@ -212,3 +211,29 @@ Rules:
 - Logo and app-icon variants are treated separately for contrast and do not automatically inherit the mascot outline.
 
 Asset naming may use suffixes such as `-clean` and `-outline` when both production variants exist.
+
+
+## 14. Mees Visual System v1 — APPROVED 2026-09-30
+
+The latest approved group 5–6 Home direction is the production reference for Visual System v1.
+
+### Composition
+- Warm off-white app canvas with generous whitespace.
+- Compact top navigation on overview screens.
+- Hero combines a calm text field on the left with one controlled illustrated discovery world on the right.
+- Mees belongs inside the illustrated world and must not overpower the headline.
+- “Voor jou vandaag” is a clear, calm primary action card below the hero.
+- Subject discovery uses four illustrated cards: Rekenen, Taal & lezen, Wereld & natuur, Creatief.
+- Desktop and mobile are the same visual system, recomposed rather than redesigned.
+
+### Subject illustration language
+- Rekenen: Mees with number blocks / concrete number material.
+- Taal & lezen: Mees reading a book.
+- Wereld & natuur: Mees investigating with a magnifying glass in nature.
+- Creatief: Mees painting / making with art materials.
+
+### Hard exclusions
+No stars, badges, XP, points, streaks, trophies, rankings, reward percentages, confetti or reward meters. Positive child feedback remains calm and contextual, with “Goed bezig!” as the default.
+
+### Background restraint
+Rich illustration is concentrated in Home/discovery and subject cards. Active learning tasks, hints and explanations use plain or subtly tinted surfaces without scenic clutter.
