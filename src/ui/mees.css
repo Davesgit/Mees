@@ -324,3 +324,29 @@
 .mees-age--junior .mees-scenery { opacity:.82; }
 
 @media(max-width:720px){ .mees-scenery{opacity:.42}.tree-b{display:none}.subject-art{opacity:.18} }
+
+
+/* REAL ASSET INTEGRATION V1 */
+.mees-home-hero { background:#eaf4ef; }
+.mees-hero-scene { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:center 52%; z-index:0; }
+.mees-hero-wash { position:absolute; inset:0; z-index:1; background:linear-gradient(90deg,rgba(248,250,246,.96) 0%,rgba(248,250,246,.89) 38%,rgba(248,250,246,.36) 67%,rgba(248,250,246,.12) 100%); }
+.mees-home-hero:after { display:none; }
+.mees-home-hero-copy { z-index:2; }
+.mees-home-hero .bird-wrap { position:relative; z-index:3; justify-self:end; align-self:end; width:min(260px,28vw); margin:0 2% -28px 0; filter:drop-shadow(0 14px 18px rgba(29,55,70,.12)); }
+.mees-mascot-image { display:block; width:100%; height:auto; object-fit:contain; }
+.mees-scenery { display:none !important; }
+
+/* The source image provides character, not wallpaper everywhere. */
+.mees-home-section,.mees-today,.mees-home-note { position:relative; z-index:2; }
+.mees-age--junior .mees-home-hero .bird-wrap { width:min(285px,32vw); }
+.mees-age--senior .mees-home-hero .bird-wrap { width:min(190px,20vw); opacity:.92; }
+.mees-age--senior .mees-hero-wash { background:linear-gradient(90deg,rgba(248,250,246,.98) 0%,rgba(248,250,246,.94) 48%,rgba(248,250,246,.52) 76%,rgba(248,250,246,.28) 100%); }
+@media(max-width:800px){
+ .mees-home-hero .bird-wrap{display:block;width:150px;position:absolute;right:12px;bottom:-8px;opacity:.28;margin:0}
+ .mees-hero-wash{background:rgba(248,250,246,.86)}
+ .mees-home-hero-copy{max-width:82%}
+}
+@media(max-width:540px){
+ .mees-home-hero .bird-wrap{width:120px;opacity:.18}
+ .mees-home-hero-copy{max-width:100%}
+}
