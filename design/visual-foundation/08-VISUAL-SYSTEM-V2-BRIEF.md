@@ -129,3 +129,19 @@ The Home implementation now follows these V2 rules:
 - borders and spacing provide hierarchy instead of large shadows;
 - mascot presence is small and supportive;
 - old V1 subject illustrations may remain temporarily during staged migration and must be replaced by approved V2 assets later.
+
+
+## Production migration checkpoint 2
+
+Focus Mode and session closure now use the V2 visual language.
+
+UX corrections made during this migration:
+- session closure has explicit reasons: completed, child-stopped, or extra-human-help-needed;
+- a no-question engine action is no longer automatically interpreted as the child having stopped;
+- completed numeric inputs and number-line controls are locked against accidental edits;
+- the mascot has been removed from the active exercise card so learning content stays dominant;
+- completion no longer shows a pseudo-performance summary of task count/support use;
+- Focus Mode uses light canvas, simple borders and low visual noise;
+- the old V1 backpack hero component has been removed from application code.
+
+Temporary bridge assets remain limited to the approved compact brand head and legacy subject illustrations. No unapproved V2 mascot has been introduced into production.
