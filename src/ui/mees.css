@@ -978,3 +978,60 @@
  .mees-focus-mode .number-line-controls{display:grid;grid-template-columns:repeat(4,1fr)}
  .mees-focus-mode .number-line-controls button{min-width:0;padding:0 6px}
 }
+
+
+/* ADAPTIVE ROUTE V1 — prerequisite, explanation and return */
+.mees-focus-mode .route-note{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  padding:14px 16px;
+  background:#eef5f4;
+  border-color:#d7e5e2;
+}
+.route-note-icon{
+  display:grid;
+  place-items:center;
+  flex:none;
+  width:32px;
+  height:32px;
+  border-radius:10px;
+  background:#dcebe7;
+  color:#477a6a;
+  font-weight:900;
+}
+.mees-focus-mode .route-note strong{
+  display:block;
+  margin:1px 0 3px;
+  color:#355b55;
+  font-size:.9rem;
+}
+.mees-focus-mode .route-note span:not(.route-note-icon){
+  display:block;
+  color:#66797a;
+  font-size:.82rem;
+  line-height:1.4;
+}
+.mees-mini-explanation{
+  margin-top:13px;
+  padding-top:12px;
+  border-top:1px solid rgba(63,117,91,.14);
+}
+.mees-mini-explanation>span{
+  display:block;
+  margin-bottom:3px;
+  color:#56766a;
+  font-size:.76rem;
+  font-weight:900;
+  letter-spacing:.02em;
+}
+.mees-mini-explanation p{
+  color:#405d55!important;
+  font-weight:700!important;
+}
+.mees-return-note{
+  margin-top:10px!important;
+  color:#627975!important;
+  font-size:.8rem!important;
+  font-weight:700!important;
+}
