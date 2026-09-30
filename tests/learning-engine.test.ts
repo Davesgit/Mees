@@ -45,3 +45,22 @@ describe("Mees learning engine invariants",()=>{
   expect(deriveEvidence([stop])).toEqual([]);
  });
 });
+
+
+describe("goal graph and richer evidence",()=>{
+ it("selects an unknown required prerequisite",async()=>{
+  const {choosePrerequisiteToCheck}=await import("../src/learning-engine/goal-graph.js");
+  const rel=[{from:"LG-TEST-006",to:"LG-TEST-007",type:"required_prerequisite" as const}];
+  const prereq:LearnerState={goalId:"LG-TEST-006",state:"unknown",confidence:"low",supportingEvidence:[],limitingFactors:["insufficient_evidence"],uncertaintyReasons:["too_few_observations"],informationNeeds:["more_evidence"],masteryModelVersion:1};
+  const target=choosePrerequisiteToCheck("LG-TEST-007",rel,{"LG-TEST-006":prereq});
+  expect(target).toBe("LG-TEST-006");
+  expect(chooseNextAction(prereq,{prerequisiteTargetId:target}).type).toBe("check_prerequisite");
+ });
+ it("retains tutor observation provenance",()=>{
+  const tutor:LearningEvent={id:"T-1",goalId:"LG-TEST-007",sessionId:"TUTOR-1",occurredAt:"2026-01-02T10:00:00Z",type:"tutor_observation",source:"tutor",tutorUnderstanding:"partial"};
+  const evidence=deriveEvidence([tutor]);
+  expect(evidence).toHaveLength(1);
+  expect(evidence[0]?.source).toBe("tutor");
+  expect(evidence[0]?.observationKind).toBe("tutor_observation");
+ });
+});
