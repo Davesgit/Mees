@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "status": "draft_for_validation",
+  "subject": "rekenen",
+  "group": 5,
+  "title": "Rekenen groep 5, eerste leerlijnstructuur",
+  "principles": [
+    "Leerdoelen zijn inhoudelijke routes, geen levels.",
+    "Groepsindeling is richtinggevend en geen harde gate.",
+    "De adaptieve engine mag terugschakelen naar prerequisites.",
+    "Deze v1 moet inhoudelijk worden gevalideerd voordat zij als curriculumclaim wordt gebruikt."
+  ],
+  "domains": [
+    {
+      "id": "G5-NUM",
+      "title": "Getallen en getalbegrip",
+      "goals": [
+        {
+          "id": "G5-NUM-001",
+          "title": "Getallen tot 1000 lezen, schrijven en plaatsen",
+          "prerequisites": [
+            "LG-TEST-010"
+          ],
+          "representations": [
+            "number_line",
+            "place_value"
+          ]
+        },
+        {
+          "id": "G5-NUM-002",
+          "title": "Getallen tot 1000 vergelijken en ordenen",
+          "prerequisites": [
+            "G5-NUM-001"
+          ],
+          "representations": [
+            "number_line",
+            "numeric_input"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G5-ADD",
+      "title": "Optellen en aftrekken",
+      "goals": [
+        {
+          "id": "G5-ADD-001",
+          "title": "Optellen tot 100 met tientaloverschrijding",
+          "prerequisites": [
+            "LG-TEST-006"
+          ],
+          "representations": [
+            "numeric_input",
+            "number_line"
+          ]
+        },
+        {
+          "id": "G5-ADD-002",
+          "title": "Aftrekken tot 100 met tientalpassage",
+          "prerequisites": [
+            "LG-TEST-008"
+          ],
+          "representations": [
+            "numeric_input",
+            "number_line"
+          ]
+        },
+        {
+          "id": "G5-ADD-003",
+          "title": "Optellen en aftrekken met grotere getallen",
+          "prerequisites": [
+            "G5-NUM-001",
+            "G5-ADD-001",
+            "G5-ADD-002"
+          ],
+          "representations": [
+            "numeric_input",
+            "place_value"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G5-MUL",
+      "title": "Vermenigvuldigen en delen",
+      "goals": [
+        {
+          "id": "G5-MUL-001",
+          "title": "Tafelkennis gebruiken in vermenigvuldigopgaven",
+          "prerequisites": [],
+          "representations": [
+            "numeric_input",
+            "groups_array"
+          ]
+        },
+        {
+          "id": "G5-MUL-002",
+          "title": "Vermenigvuldigen als herhaald optellen en groeperen",
+          "prerequisites": [
+            "G5-MUL-001"
+          ],
+          "representations": [
+            "groups_array",
+            "number_line"
+          ]
+        },
+        {
+          "id": "G5-MUL-003",
+          "title": "Delen als verdelen en groeperen",
+          "prerequisites": [
+            "G5-MUL-001"
+          ],
+          "representations": [
+            "groups_array",
+            "numeric_input"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "G5-MEASURE",
+      "title": "Meten, tijd en geld",
+      "goals": [
+        {
+          "id": "G5-MEASURE-001",
+          "title": "Rekenen met euro's en centen",
+          "prerequisites": [
+            "G5-ADD-001",
+            "G5-ADD-002"
+          ],
+          "representations": [
+            "numeric_input",
+            "money"
+          ]
+        },
+        {
+          "id": "G5-MEASURE-002",
+          "title": "Klokkijken en rekenen met tijd",
+          "prerequisites": [],
+          "representations": [
+            "clock",
+            "numeric_input"
+          ]
+        },
+        {
+          "id": "G5-MEASURE-003",
+          "title": "Lengte, gewicht en inhoud in eenvoudige situaties",
+          "prerequisites": [],
+          "representations": [
+            "measurement",
+            "numeric_input"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Dit bestand vervangt de synthetische testdata nog niet.",
+    "Eerst inhoudelijke validatie, daarna productievragen en mappings toevoegen."
+  ]
+}
