@@ -213,9 +213,9 @@ Rules:
 Asset naming may use suffixes such as `-clean` and `-outline` when both production variants exist.
 
 
-## 14. Mees Visual System v1 — APPROVED 2026-09-30
+## 14. Mees Visual System v1 — SUPERSEDED / LEGACY 2026-09-30
 
-The latest approved group 5–6 Home direction is the production reference for Visual System v1.
+Visual System v1 documents the previous production direction. It is retained for history and implementation reference, but it is no longer the target visual direction. Learning architecture, UX behavior and non-gamification decisions remain valid unless explicitly superseded.
 
 ### Composition
 - Warm off-white app canvas with generous whitespace.
@@ -239,7 +239,7 @@ No stars, badges, XP, points, streaks, trophies, rankings, reward percentages, c
 Rich illustration is concentrated in Home/discovery and subject cards. Active learning tasks, hints and explanations use plain or subtly tinted surfaces without scenic clutter.
 
 
-## Home v1 — frozen 2026-09-30
+## Home v1 — LEGACY REFERENCE 2026-09-30
 
 The production Home direction for the middle age band (groups 5–6) is approved as the baseline implementation.
 
@@ -284,3 +284,41 @@ A user-supplied mobile-app reference established a useful refinement target for 
 Working principle: **Mees may be rich in worlds, but calm in form.**
 
 A calmer mascot candidate must enter the asset registry as `review`. It becomes canonical only after explicit human approval.
+
+
+## 16. Visual System v2 — ACTIVE DESIGN DIRECTION 2026-09-30
+
+Visual System v2 intentionally moves Mees toward a calmer, lighter and more child-oriented educational product. The user-supplied mobile reference is a mood/reference source for calmness and age-fit only, not a design to copy.
+
+### V2 character
+- recognizably for primary-school children, without becoming babyish;
+- generous white/near-white space;
+- simple, friendly shapes and clear hierarchy;
+- illustrations use flatter/softer rendering and substantially less 3D texture;
+- Mees remains expressive and warm, but visual noise is reduced;
+- learning content is visually dominant during tasks.
+
+### V2 interface
+- white or very light warm canvas;
+- cards rely more on spacing and subtle borders than heavy shadows;
+- restrained pastel subject accents;
+- fewer decorative scenic backgrounds;
+- controls are simple, large and predictable;
+- one primary action per state;
+- illustration supports orientation and warmth rather than filling empty space.
+
+### V2 mascot target
+The mascot should move closer to the calm, child-friendly quality of the seated bird reference while remaining an original Mees character. Do not copy the reference anatomy or artwork. The previous glossy 3D rendering is no longer the target for new assets.
+
+### What survives from v1
+- Contextual Navigation + Focus Mode;
+- UX State Contract;
+- Nunito Sans as current UI typography direction;
+- non-gamification constraints;
+- semantic color roles;
+- accessibility rules;
+- age progression from groups 3 through 8;
+- learning-engine and curriculum architecture.
+
+### Migration rule
+Do not bulk-redesign production screens until the V2 mini-system is approved. First approve: mascot direction, brand lockup, palette, typography treatment, button/card/input language, one Home reference and one mathematics Focus Mode reference. Then migrate components and screens systematically.
