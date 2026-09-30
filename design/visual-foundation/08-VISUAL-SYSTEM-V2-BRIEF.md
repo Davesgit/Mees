@@ -111,3 +111,8 @@ A replacement happy pose must preserve normal Mees anatomy and proportions. Happ
 - a subtle upward wing gesture is allowed;
 - avoid oversized spread wings, strange limb placement, extreme deformation or a celebratory/reward pose;
 - the result should read as friendly and pleased, not as a trophy/celebration character.
+
+
+## Final V2 mascot expression rule
+
+The latest V2 direction is approved for production migration. All mascot poses keep the same canonical open-eye design and proportions. Expression is communicated through posture, head angle, wing position, stance and subtle contextual accent marks. The rendering direction is calm, flat or softly shaded, with rounded silhouettes, generous whitespace, restrained pastel accents and simple educational UI. Concept boards remain references; individual production assets require their own registry entry and visual QA.
