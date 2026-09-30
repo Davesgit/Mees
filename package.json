@@ -1,21 +1,6 @@
 {
-  "name": "mees",
-  "private": true,
-  "version": "0.0.1",
-  "type": "module",
-  "scripts": {
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "sim": "tsx src/simulator/run.ts",
-    "typecheck": "tsc --noEmit",
-    "sim:profiles": "tsx src/simulator/profiles.ts",
-    "sim:journeys": "tsx src/simulator/journeys.ts",
-    "sim:session": "tsx src/simulator/session-demo.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^24.0.0",
-    "tsx": "^4.20.0",
-    "typescript": "^5.9.0",
-    "vitest": "^3.2.0"
-  }
+  "name":"mees","private":true,"version":"0.0.1","type":"module",
+  "scripts":{"dev":"vite","build":"vite build","preview":"vite preview","test":"vitest run","test:watch":"vitest","typecheck":"tsc --noEmit","sim":"tsx src/simulator/run.ts","sim:profiles":"tsx src/simulator/profiles.ts","sim:journeys":"tsx src/simulator/journeys.ts","sim:session":"tsx src/simulator/session-demo.ts"},
+  "dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","typescript":"^5.9.0","react":"latest","react-dom":"latest"},
+  "devDependencies":{"@types/node":"^24.0.0","@types/react":"latest","@types/react-dom":"latest","tsx":"^4.20.0","vitest":"^3.2.0"}
 }
