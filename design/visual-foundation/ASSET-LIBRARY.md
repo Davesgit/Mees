@@ -85,3 +85,11 @@ public/assets/mees/
 
 ## Usage rule for AI tools
 Before adding or generating an asset, check this registry. Reuse approved assets where possible. If a missing asset is needed, add it to the inventory first, create it according to the Visual Master Plan, review it, then mark it approved.
+
+
+## Official Mees Outline
+Approved mascot assets may have two delivery variants:
+- `clean`: transparent mascot without contour, retained as flexible master/reference.
+- `outline`: transparent mascot with the consistent soft white Mees contour, preferred on colored/illustrated UI backgrounds.
+
+Both variants represent the same approved character. The outline is a presentation treatment, not a change to Mees anatomy.
