@@ -1116,3 +1116,35 @@
  .mees-finish-actions{display:grid}
  .mees-finish-actions .mees-button{width:100%}
 }
+
+
+/* UX CONSISTENCY PASS V1 */
+.mees-button:disabled,
+.mees-focus-mode .mees-actions .mees-button:disabled{
+  cursor:not-allowed;
+  opacity:.42;
+  box-shadow:none;
+}
+.mees-button:focus-visible,
+.mees-home-nav button:focus-visible,
+.mees-subject-card:focus-visible{
+  outline:3px solid rgba(49,95,106,.22);
+  outline-offset:3px;
+}
+.mees-focus-mode .basic-answer input:focus,
+.mees-focus-mode .basic-answer input:focus-visible{
+  border-color:#5c9dab;
+  outline:3px solid rgba(92,157,171,.22);
+  outline-offset:2px;
+}
+.mees-focus-mode .mees-actions{
+  align-items:center;
+}
+.mees-focus-mode .mees-actions .mees-button{
+  min-height:48px;
+  border-radius:14px;
+}
+.mees-focus-mode .mees-stop:focus-visible{
+  outline:3px solid rgba(49,95,106,.18);
+  outline-offset:2px;
+}
