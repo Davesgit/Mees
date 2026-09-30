@@ -1,139 +1,96 @@
-# Mees Design Tokens v1
+# Mees Design Tokens v2
 
-Status: production foundation
+Status: active production foundation
 Date: 2026-09-30
 
 ## Purpose
 
-Tokens translate the approved Mees visual world into stable UI rules. Illustration may be rich; the interface itself stays calm, readable and predictable.
+V2 is calm, child-friendly and content-first. Shared tokens create the visual hierarchy. Screen-specific overrides should be exceptional.
 
-## Color roles
+## Core color roles
 
-Use semantic roles in components rather than hard-coded illustration colors.
+Production CSS is the source of truth.
 
-- `--mees-bg`: warm near-white application background
-- `--mees-surface`: primary card/surface
-- `--mees-surface-soft`: subtle secondary surface
-- `--mees-text`: primary high-contrast text
-- `--mees-text-muted`: secondary text
-- `--mees-primary`: Mees blue, primary actions and selected state
-- `--mees-primary-hover`: darker primary interaction state
-- `--mees-accent-warm`: warm orange accent, sparingly
-- `--mees-success`: calm confirmation state, not reward/confetti
-- `--mees-warning`: attention/help state
-- `--mees-border`: quiet structural border
-- `--mees-focus`: accessible keyboard focus ring
+- `--mees-canvas: #f8fafc` — application canvas
+- `--mees-surface: #ffffff` — cards and controls
+- `--mees-surface-soft: #f3f7fb` — quiet secondary surface
+- `--mees-text: #173d70` — primary dark-blue text
+- `--mees-muted: #61758d` — secondary text
+- `--mees-primary: #2f7cf4` — primary action
+- `--mees-primary-hover: #2369d5` — primary hover
+- `--mees-border: #dce6f0` — structural border
+- `--mees-mint: #e9f7ef` — calm correct/supportive state
+- `--mees-warm: #fff5df` — hint surface
+- `--mees-info: #edf7fd` — retry/information surface
+- `--mees-lavender: #f7f0fa` — restrained subject surface
 
-Do not use red as a child-facing “wrong answer” punishment signal. Incorrect attempts should lead to guidance.
+Pastels are context surfaces, never a reward language. Incorrect answers do not use punitive red.
 
 ## Typography
 
-Primary UI family: Nunito Sans with robust system fallbacks.
+Primary UI direction: Nunito Sans with rounded/system fallbacks.
 
-Recommended scale:
-- display: 40/48, 700
-- h1: 32/40, 700
-- h2: 26/34, 700
-- h3: 21/28, 700
-- body-lg: 18/28, 500
-- body: 16/24, 500
-- small: 14/20, 600
-- numeric/task: 28–40 depending on exercise
+- large Home heading: responsive 32–45px
+- exercise prompt: responsive 29–38px
+- section heading: about 23px
+- body: 16px baseline
+- support text: 12–14px
+- numeric input: about 32px
 
-Use tabular numerals where alignment or changing numeric values matter.
+Age profiles change scale and density, not typeface or identity.
 
-Age adaptation changes size/spacing/density, not font family.
+## Shape
 
-## Spacing
+- controls: 12px radius
+- standard cards: 16px
+- feature/exercise cards: 18px
+- pills only for compact metadata where the shape is meaningful
 
-Base grid: 4px.
-
-Preferred tokens:
-4, 8, 12, 16, 20, 24, 32, 40, 48, 64.
-
-Group 3–4 defaults toward more breathing room and larger controls.
-Group 7–8 may be denser, but never cramped.
-
-## Radius
-
-- small controls: 10px
-- buttons/inputs: 14px
-- cards: 18px
-- feature/hero cards: 24px
-- pill: 999px
-
-Avoid making every element a pill.
+V2 avoids the oversized rounded-card language of V1.
 
 ## Elevation
 
-Use shadows for hierarchy, not decoration:
-- level 0: none
-- level 1: subtle card separation
-- level 2: floating contextual panel
-- level 3: modal/dialog only
+Default UI elevation is none. Use border, spacing and surface contrast first. Shadows are reserved for overlays/dialogs that actually float above content.
 
-Illustrations can have dimensional shading; UI chrome should remain restrained.
+## Interaction
 
-## Interaction sizing
-
-- minimum interactive target: 44x44px
-- primary child-facing controls: preferably 48–56px high
-- clear visible focus state
-- hover must never be the only affordance
+- minimum target: 44×44px
+- common child-facing action: 46–50px high
+- keyboard focus: visible blue focus ring
+- disabled controls remain clearly legible
+- completed answer controls are locked to prevent accidental state changes
+- do not present inactive UI as clickable
 
 ## Motion
 
-Motion should explain change, not manufacture excitement.
+Motion explains state change only:
 - fast: 120ms
 - normal: 180ms
-- slow: 260ms
-- reduced-motion: remove nonessential transform/movement
+- feedback entrance: tiny fade/3px shift
+- respect reduced motion
 
-No reward bursts, confetti, attention loops or streak animation.
+No confetti, reward bursts, streak animation or looping attention effects.
 
 ## Layout
 
-Core content width:
-- reading/task focus: approximately 720px
-- general content: approximately 1120px
-- environment/hero art may bleed wider
+- app shell: max 980px
+- Focus Mode/session content: max 760px
+- active exercise uses one dominant content card
+- Home may use one restrained abstract mascot/brand cluster
+- scenic worlds are not the default background
 
-Focus Mode removes global navigation and decorative competition around the active task.
+## Focus Mode
 
-## Illustration integration
+Global navigation disappears during an active task. Keep only brand, factual session progress and Stoppen. Mascot art is normally absent from the exercise card. Hint, retry and explanation panels remain compact and subordinate to the problem.
 
-- Home/Discover may use rich environment art.
-- Task cards use subject art selectively.
-- Focus Mode minimizes illustration density.
-- Mascot never blocks task content or answer controls.
-- Use approved master assets, never regenerate assets at runtime.
-- Scene labels remain HTML/UI text, never baked into scene images.
+## Home
 
-## Responsive image slots
+Home may show subject choices and one clear “today” action. Only implemented destinations receive interactive affordances. Planned subjects may be visible as non-interactive “Binnenkort” cards.
 
-Each approved environment should support:
-- wide hero: 16:7 to 16:9
-- card: approximately 4:3
-- mobile hero: approximately 4:5 or 9:16 crop
+## Mascot and illustration
 
-Prefer crops from one approved master over separately regenerated compositions.
+V2 mascot assets use the approved calm flat/soft-shaded direction and canonical open eyes. Expression comes from posture, head angle, wings and stance. Until individual V2 production assets pass visual QA, the approved compact legacy brand head may be used only as a temporary bridge.
 
-## Component implications
+## Non-gamification lock
 
-The token layer is designed for:
-- Button
-- IconButton
-- Card
-- SubjectCard
-- EnvironmentHero
-- ProgressIndicator
-- AnswerOption
-- Input
-- HintPanel
-- ExplanationPanel
-- SessionHeader
-- Stop/Leave control
-- Modal/Dialog
-- MascotMessage
-
-The next phase defines these as reusable components rather than styling screens ad hoc.
+Do not add stars, trophies, points, XP, streaks, rankings, reward meters, celebratory confetti or tracked praise. Functional progress such as “Vraag 3 van 6” is allowed.
