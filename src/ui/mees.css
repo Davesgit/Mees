@@ -785,3 +785,49 @@
  .mees-focus-mode .mees-actions{display:grid;grid-template-columns:1fr 1fr}
  .mees-focus-mode .mees-actions .mees-button{width:100%}
 }
+
+
+/* FOCUS MODE V1.1 — compact learning canvas */
+.mees-age--middle.mees-focus-mode .mees-focus-shell{
+  width:min(690px,calc(100% - 32px));
+  margin-top:28px;
+}
+.mees-age--middle.mees-focus-mode .mees-exercise-card{
+  min-height:0;
+  padding:34px 38px 36px;
+}
+.mees-age--middle .mees-exercise-intro{
+  min-height:46px;
+  margin-bottom:18px;
+  align-items:center;
+}
+.mees-age--middle .mees-focus-mascot{
+  width:48px;
+  height:48px;
+}
+.mees-age--middle.mees-focus-mode .mees-exercise-card>h1{
+  margin-bottom:25px;
+  font-size:2.35rem;
+}
+.mees-age--middle.mees-focus-mode .basic-answer input{
+  width:190px;
+  min-height:64px;
+  font-size:1.85rem;
+  padding:10px 16px;
+}
+.mees-age--middle.mees-focus-mode .basic-answer span{
+  max-width:330px;
+}
+.mees-age--middle.mees-focus-mode .mees-actions{
+  margin-top:22px;
+}
+.mees-age--middle.mees-focus-mode .mees-actions .mees-button--primary{
+  min-width:128px;
+}
+@media(max-width:600px){
+ .mees-age--middle.mees-focus-mode .mees-focus-shell{width:100%;margin-top:18px}
+ .mees-age--middle.mees-focus-mode .mees-exercise-card{padding:24px 20px 26px}
+ .mees-age--middle .mees-exercise-intro{margin-bottom:16px}
+ .mees-age--middle.mees-focus-mode .mees-exercise-card>h1{font-size:2rem}
+ .mees-age--middle.mees-focus-mode .basic-answer input{width:100%;min-height:62px}
+}
