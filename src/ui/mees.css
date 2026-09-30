@@ -247,3 +247,50 @@
   .mees-age--middle .welcome-hero,
   .mees-age--senior .welcome-hero { min-height: 0; grid-template-columns: 1fr; }
 }
+
+
+/* MEES PRODUCTION HOME V1 */
+.mees-home { width:min(1120px,calc(100% - 32px)); margin:24px auto 64px; display:grid; gap:24px; }
+.mees-home-header { width:min(1120px,calc(100% - 32px)); margin:0 auto; }
+.mees-home-nav { display:flex; gap:6px; padding:5px; border:1px solid var(--mees-border); border-radius:14px; background:rgba(255,255,255,.82); }
+.mees-home-nav button { min-height:40px; border:0; border-radius:10px; padding:0 14px; background:transparent; color:var(--mees-text-muted); font:700 .9rem/1 var(--mees-font); cursor:pointer; }
+.mees-home-nav button.is-active { background:#e8f2fb; color:var(--mees-primary); }
+.mees-home-hero { min-height:250px; display:grid; grid-template-columns:minmax(0,1.5fr) minmax(180px,.5fr); align-items:center; gap:24px; overflow:hidden; padding:clamp(28px,5vw,52px); border-radius:var(--mees-radius-hero); background:linear-gradient(120deg,#e9f6ee 0%,#e3f1f8 58%,#f7edda 100%); position:relative; }
+.mees-home-hero:after { content:""; position:absolute; right:-8%; bottom:-55%; width:52%; aspect-ratio:1; border-radius:50%; background:rgba(84,145,108,.11); }
+.mees-home-hero-copy { position:relative; z-index:1; max-width:650px; }
+.mees-home-hero h1 { margin:0 0 12px; font-size:clamp(2rem,4vw,3.15rem); line-height:1.08; }
+.mees-home-hero p:last-child { margin:0; max-width:590px; color:var(--mees-text-muted); font-size:1.08rem; line-height:1.6; }
+.mees-today { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:24px; background:var(--mees-surface); border:1px solid var(--mees-border); border-radius:var(--mees-radius-card); box-shadow:var(--mees-shadow-1); }
+.mees-today-copy { display:flex; align-items:center; gap:18px; }
+.mees-today h2,.mees-home-section h2,.mees-home-note h2 { margin:2px 0 6px; }
+.mees-today p:last-child,.mees-home-note p:last-child { margin:0; color:var(--mees-text-muted); }
+.mees-subject-mark,.subject-symbol { display:grid; place-items:center; flex:none; font-weight:800; color:var(--mees-primary); background:#e8f2fb; }
+.mees-subject-mark { width:68px; height:68px; border-radius:18px; }
+.mees-home-section { padding-top:8px; }
+.mees-section-heading { display:flex; align-items:end; justify-content:space-between; margin-bottom:16px; }
+.mees-subject-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.mees-subject-card { min-height:140px; border:1px solid rgba(23,50,74,.08); border-radius:18px; padding:20px; display:flex; flex-direction:column; align-items:flex-start; justify-content:space-between; text-align:left; color:var(--mees-text); font-family:var(--mees-font); cursor:pointer; }
+.mees-subject-card strong,.mees-subject-card small { display:block; }
+.mees-subject-card strong { font-size:1rem; margin-bottom:3px; }
+.mees-subject-card small { color:var(--mees-text-muted); font-size:.82rem; }
+.subject-symbol { width:48px; height:48px; border-radius:14px; background:rgba(255,255,255,.72); }
+.subject-math { background:#eaf6ec; }.subject-language { background:#fff3dc; }.subject-world { background:#e8f3fb; }.subject-creative { background:#f8e9ee; }
+.mees-home-note { min-height:140px; padding:24px 28px; border-radius:18px; display:flex; align-items:center; justify-content:space-between; gap:24px; background:#f1f5f4; }
+.mees-calm-feedback { white-space:nowrap; padding:10px 15px; border-radius:12px; background:#fff; color:#356d55; font-weight:800; border:1px solid #dce9e2; }
+
+.mees-age--junior .mees-subject-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.mees-age--junior .mees-subject-card { min-height:160px; font-size:1.05rem; }
+.mees-age--junior .mees-home-hero { min-height:310px; }
+.mees-age--senior .mees-home-hero { min-height:210px; padding:32px 38px; }
+.mees-age--senior .mees-subject-card { min-height:112px; flex-direction:row; align-items:center; justify-content:flex-start; gap:14px; padding:16px; }
+.mees-age--senior .subject-symbol { width:42px; height:42px; }
+
+@media(max-width:800px){
+ .mees-home-nav{display:none}.mees-home-hero{grid-template-columns:1fr;min-height:0}.mees-home-hero .bird-wrap{display:none}
+ .mees-subject-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:540px){
+ .mees-home,.mees-home-header{width:min(100% - 24px,1120px)}.mees-today{align-items:stretch;flex-direction:column}.mees-today .mees-button{width:100%}
+ .mees-subject-grid,.mees-age--junior .mees-subject-grid{grid-template-columns:1fr}.mees-subject-card{min-height:104px;flex-direction:row;align-items:center;justify-content:flex-start;gap:14px}
+ .mees-home-note{align-items:flex-start;flex-direction:column}
+}
