@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "purpose": "synthetic_profiles_for_engine_tests",
+  "profiles": [
+    {
+      "id": "SIM-A",
+      "title": "Eén eerste succes",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "correct",
+          "support": "independent"
+        }
+      ],
+      "expected": {
+        "must_not_state": "likely_mastered",
+        "information_need": "more_evidence"
+      }
+    },
+    {
+      "id": "SIM-B",
+      "title": "Veel vergelijkbare successen in één sessie",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "correct",
+          "support": "independent"
+        },
+        {
+          "question": "Q-T016",
+          "outcome": "correct",
+          "support": "independent"
+        },
+        {
+          "question": "Q-T025",
+          "outcome": "correct",
+          "support": "independent"
+        }
+      ],
+      "expected": {
+        "note": "positief bewijs, maar time spread ontbreekt; engine mag niet blind op aantal antwoorden varen"
+      }
+    },
+    {
+      "id": "SIM-C",
+      "title": "Gespreid zelfstandig begrip",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "session": 1,
+          "question": "Q-T015",
+          "outcome": "correct",
+          "support": "independent"
+        },
+        {
+          "session": 1,
+          "question": "Q-T017",
+          "outcome": "correct",
+          "support": "independent"
+        },
+        {
+          "session": 2,
+          "question": "Q-T016",
+          "outcome": "correct",
+          "support": "independent"
+        }
+      ],
+      "expected": {
+        "candidate_state": "likely_mastered",
+        "confidence": "to_be_calibrated"
+      }
+    },
+    {
+      "id": "SIM-D",
+      "title": "Leren na hint",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "incorrect",
+          "response": 52
+        },
+        {
+          "action": "hint",
+          "level": "light"
+        },
+        {
+          "question": "Q-T015",
+          "outcome": "correct",
+          "support": "light_support"
+        },
+        {
+          "session": 2,
+          "question": "Q-T016",
+          "outcome": "correct",
+          "support": "independent"
+        }
+      ],
+      "expected": {
+        "must_not": "penalize_hint",
+        "next_need": "additional_independent_confirmation_if_threshold_not_met"
+      }
+    },
+    {
+      "id": "SIM-E",
+      "title": "Alleen succes met sterke hulp",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "incorrect"
+        },
+        {
+          "action": "hint",
+          "level": "strong"
+        },
+        {
+          "question": "Q-T015",
+          "outcome": "correct",
+          "support": "strong_support"
+        },
+        {
+          "question": "Q-T016",
+          "outcome": "incorrect"
+        },
+        {
+          "action": "explanation"
+        },
+        {
+          "question": "Q-T016",
+          "outcome": "correct",
+          "support": "strong_support"
+        }
+      ],
+      "expected": {
+        "candidate_state": "developing",
+        "information_need": "need_independent_evidence"
+      }
+    },
+    {
+      "id": "SIM-F",
+      "title": "Getallenlijn helpt",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "incorrect"
+        },
+        {
+          "question": "Q-T016",
+          "outcome": "incorrect"
+        },
+        {
+          "action": "change_representation",
+          "to": "number_line"
+        },
+        {
+          "question": "Q-T017",
+          "outcome": "correct",
+          "support": "light_support"
+        }
+      ],
+      "expected": {
+        "must_not": "assign_visual_learner_label",
+        "next_need": "later_independent_check"
+      }
+    },
+    {
+      "id": "SIM-G",
+      "title": "Prerequisite onbekend",
+      "target_goal": "LG-TEST-007",
+      "precondition": {
+        "state_LG_TEST_006": "unknown"
+      },
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "incorrect"
+        },
+        {
+          "question": "Q-T016",
+          "outcome": "incorrect"
+        }
+      ],
+      "expected": {
+        "candidate_action": "check_prerequisite",
+        "target": "LG-TEST-006"
+      }
+    },
+    {
+      "id": "SIM-H",
+      "title": "Tegenstrijdig bewijs",
+      "target_goal": "LG-TEST-007",
+      "precondition": {
+        "prior_state": "likely_mastered"
+      },
+      "sequence": [
+        {
+          "session": 5,
+          "question": "Q-T015",
+          "outcome": "incorrect"
+        },
+        {
+          "session": 5,
+          "question": "Q-T016",
+          "outcome": "incorrect"
+        }
+      ],
+      "expected": {
+        "candidate_state": "needs_reassessment",
+        "candidate_action": "reassess"
+      }
+    },
+    {
+      "id": "SIM-I",
+      "title": "Technische fout",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "invalid",
+          "reason": "validator_error"
+        }
+      ],
+      "expected": {
+        "must_not": "negative_mastery_evidence",
+        "candidate_action": "gather_more_evidence"
+      }
+    },
+    {
+      "id": "SIM-J",
+      "title": "Tutorlus",
+      "target_goal": "LG-TEST-007",
+      "precondition": {
+        "persistent_uncertainty": true,
+        "automatic_interventions_tried": true,
+        "relevant_prerequisite_checked": true
+      },
+      "sequence": [
+        {
+          "action": "propose_tutor_help"
+        },
+        {
+          "action": "parent_approve"
+        },
+        {
+          "action": "tutor_observation",
+          "understanding": "partial",
+          "confidence": "high"
+        },
+        {
+          "session": "later",
+          "question": "Q-T016",
+          "outcome": "correct",
+          "support": "independent"
+        }
+      ],
+      "expected": {
+        "must": "retain_tutor_as_source",
+        "next": "recalculate_state"
+      }
+    },
+    {
+      "id": "SIM-K",
+      "title": "Ouder weigert tutor",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "action": "propose_tutor_help"
+        },
+        {
+          "action": "parent_decline"
+        }
+      ],
+      "expected": {
+        "must_not": "negative_learning_evidence",
+        "next": "safe_alternative_route"
+      }
+    },
+    {
+      "id": "SIM-L",
+      "title": "Kind stopt",
+      "target_goal": "LG-TEST-007",
+      "sequence": [
+        {
+          "question": "Q-T015",
+          "outcome": "incorrect"
+        },
+        {
+          "action": "stop"
+        }
+      ],
+      "expected": {
+        "must_not": [
+          "infer_frustration",
+          "infer_motivation",
+          "infer_inability"
+        ],
+        "next": "resume_later_possible"
+      }
+    }
+  ]
+}
