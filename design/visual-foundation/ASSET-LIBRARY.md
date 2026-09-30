@@ -116,3 +116,13 @@ The following individual assets are required to implement the approved group 5â€
 | MEES-SUBJECT-CREATIVE-001 | illustrations/subjects/MEES-SUBJECT-CREATIVE-001.webp | Creatief subject card | review |
 
 The approved scene family already present in the repository remains reusable supporting scenery. Subject-card art must be exported as individual production assets before it is wired into UI.
+
+
+## Calm mascot refinement candidates â€” REVIEW ONLY
+
+| Asset ID | Intended file | Purpose | Status |
+|---|---|---|---|
+| MEES-MASCOT-CALM-SEATED-001 | mascot/review/MEES-MASCOT-CALM-SEATED-001.png | Calm seated/learning mascot candidate; simpler graphic treatment while preserving canonical Mees anatomy | review |
+| MEES-MASCOT-CALM-BASE-001 | mascot/review/MEES-MASCOT-CALM-BASE-001.png | Simplified calm base-render candidate for comparison with current canonical character | review |
+
+These candidates may not replace `MEES-BRAND-HEAD-001` or any approved canonical brand asset until explicit approval. The user-supplied reference image is inspiration for calmness only and is not itself a Mees asset.
