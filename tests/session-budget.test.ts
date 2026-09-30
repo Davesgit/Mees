@@ -1,0 +1,3 @@
+import{describe,expect,it}from"vitest";import{applySessionBudget}from"../src/learning-engine/session-budget.js";
+const action={type:"continue_practice" as const,goalId:"G",reasonCodes:["x"],adaptiveEngineVersion:1 as const};
+describe("session budget",()=>{it("can end a session without calling it failure",()=>{const a=applySessionBudget(action,{meaningfulBlocks:5,attemptsOnSameBottleneck:1});expect(a.type).toBe("end_session");expect(a.reasonCodes).toContain("session_budget_reached")});it("limits repetitive bottleneck practice",()=>{expect(applySessionBudget(action,{meaningfulBlocks:2,attemptsOnSameBottleneck:3}).type).toBe("end_session")})});
