@@ -143,3 +143,123 @@ The approved V2 character uses one consistent eye construction in every pose.
 | MEES-V2-MASCOT-SATISFIED-001 | Calm completion pose | planned |
 
 V1 glossy assets are legacy references during migration and are not a source for new artwork.
+
+
+# MASTER ASSET CHECKLIST — V2
+
+This section is the practical checklist for all visual assets needed by the Mees website/app. An item is only complete when the individual production file exists in the repository, has the correct background/transparency, and has passed visual QA.
+
+Legend:
+- [x] production-ready
+- [ ] still required
+- visually approved does not count as done until the production file exists
+
+## Brand
+- [ ] MEES-V2-BRAND-HEAD-001 — compact V2 Mees head, transparent
+- [ ] MEES-V2-BRAND-WORDMARK-001 — custom Mees wordmark, transparent
+- [ ] MEES-V2-BRAND-LOGO-HORIZONTAL-001 — head + wordmark
+- [ ] MEES-V2-BRAND-APPICON-001 — app/PWA icon
+- [ ] MEES-V2-BRAND-FAVICON-001 — browser favicon
+
+Current MEES-BRAND-HEAD-001.png remains a temporary V1 bridge.
+
+## Canonical mascot masters
+- [ ] MEES-V2-MASCOT-NEUTRAL-001 — neutral full-body master, transparent. Visual direction approved, production export still required.
+- [ ] MEES-V2-MASCOT-FRONT-001 — front reference
+- [ ] MEES-V2-MASCOT-BACK-001 — back reference
+- [ ] MEES-V2-MASCOT-LEFT-001 — opposite-side reference
+
+Every later pose must preserve the same canonical open-eye construction, beak, crest, body proportions, feet and blue palette.
+
+## Product mascot poses
+- [ ] MEES-V2-MASCOT-BOOKS-001 — calm pose on books, Home/learning context
+- [ ] MEES-V2-MASCOT-CURIOUS-001 — curious/supportive context
+- [ ] MEES-V2-MASCOT-THINKING-001 — hint/explanation support
+- [ ] MEES-V2-MASCOT-HAPPY-001 — warm positive acknowledgement, used sparingly
+- [ ] MEES-V2-MASCOT-SATISFIED-001 — calm session closure
+- [ ] MEES-V2-MASCOT-READING-001 — taal/lezen context
+- [ ] MEES-V2-MASCOT-POINTING-001 — future explanation context
+
+Flying, running, sleeping, peeking, celebration, trophy, heart and star poses are not required for the current MVP. Sprite sheets are pose research only.
+
+## Subject illustrations
+- [ ] MEES-V2-SUBJECT-MATH-001 — Rekenen, transparent
+- [ ] MEES-V2-SUBJECT-READING-001 — Taal & lezen, transparent
+- [ ] MEES-V2-SUBJECT-NATURE-001 — Wereld & natuur, transparent
+- [ ] MEES-V2-SUBJECT-CREATIVE-001 — Creatief, transparent
+
+Current MEES-SUBJECT-*-001.png files are V1 placeholders and must be replaced.
+
+## Optional Home decoration
+- [ ] MEES-V2-DECOR-CLOUD-001 — small cloud
+- [ ] MEES-V2-DECOR-LEAVES-001 — leaf cluster
+- [ ] MEES-V2-DECOR-BOOKS-001 — small book stack
+
+These are optional. Home must still work without them. Large scenic backgrounds are not required in V2.
+
+## Learning representation system
+These should normally be reusable SVG/React components, not AI-generated raster images.
+
+- [x] Number line — existing UI component
+- [ ] Ten-frame — number sense
+- [ ] Base-10 blocks — place value
+- [ ] Fraction bar — fractions
+- [ ] Fraction circle — fractions
+- [ ] Clock face — time
+- [ ] Money set — money calculations
+- [ ] Measurement ruler — length
+- [ ] Geometry shapes — geometry
+- [ ] Grid / coordinate plane — later mathematics
+
+## Feedback/UI graphics
+- [x] Hint mark — UI/CSS
+- [x] Correct state mark — UI/CSS
+- [x] Retry state mark — UI/CSS
+- [x] Prerequisite/route mark — UI/CSS
+- [ ] Standard vector icon family — only when settings/profile/navigation screens actually exist
+
+No trophies, stars, badges, XP, streak flames or reward graphics.
+
+## Future-screen asset groups
+Not required until the corresponding product screen exists.
+
+- [ ] Onboarding illustration(s)
+- [ ] Parent-area illustrations
+- [ ] Teacher-area illustrations
+- [ ] Empty-state illustrations
+- [ ] Error/offline illustration
+- [ ] Discover/topic illustrations
+
+## Legacy files currently in repository
+- MEES-BRAND-HEAD-001.png — temporary bridge
+- MEES-MASCOT-HERO-BACKPACK-001.png — deprecate
+- MEES-SUBJECT-MATH-001.png — replace
+- MEES-SUBJECT-READING-001.png — replace
+- MEES-SUBJECT-NATURE-001.png — replace
+- MEES-SUBJECT-CREATIVE-001.png — replace
+- MEES-SCENE-COAST-LIGHTHOUSE-001.jpg — legacy, not required
+- MEES-SCENE-DISCOVERY-STUDY-001.jpg — legacy, not required
+- MEES-SCENE-FOREST-DISCOVERY-001.jpg — legacy, not required
+- MEES-SCENE-MOUNTAIN-LAKE-001.jpg — legacy, not required
+
+## MVP visual completion target
+For Home → Rekenen → Focus Mode → feedback → session end, the minimum visual set is:
+1. V2 brand head
+2. V2 wordmark/horizontal logo
+3. V2 neutral mascot master
+4. V2 books or other approved Home-support pose
+5. V2 satisfied/calm completion pose
+6. four V2 subject illustrations
+7. favicon/app icon
+8. reusable math representations required by implemented question types
+
+## Definition of done
+An image can only be checked when:
+1. it exists as an individual file, not a collage crop;
+2. style/anatomy matches V2;
+3. transparency/background is correct;
+4. no unwanted glow, halo, checkerboard, text or scenery is baked in;
+5. it works at the intended UI size;
+6. it has a stable asset ID and repository path;
+7. it passed visual QA in the real screen;
+8. this registry points to the production file.
