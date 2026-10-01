@@ -180,3 +180,75 @@ Rejected signals:
 - generated text, progress counts and sample learning content are illustrative only.
 
 No image from this board may be registered as a production asset. Production assets must be generated/exported individually and pass the asset registry + visual QA process.
+
+
+## Age progression strategy — one system, three expressions
+
+Mees does not switch to a different product as children get older. The same design language gradually matures with them. The transition should feel continuous rather than like moving from a children's app to an adult dashboard.
+
+### Age bands
+
+#### Group 3–4 — junior
+Goal: warm, obvious, reassuring.
+- mascot presence: high;
+- illustration density: richer, but never behind active task content;
+- controls: largest;
+- copy: shortest and most concrete;
+- subject cards: larger illustrations, slightly richer pastel surfaces;
+- Home may use a larger Mees or a small scenic cluster;
+- educational representations may feel slightly more tactile/physical;
+- fewer choices per screen.
+
+#### Group 5–6 — middle baseline
+Goal: balanced and independent.
+- mascot presence: medium;
+- illustration density: balanced;
+- controls: standard V2 sizes;
+- copy: concise but less childlike;
+- subject cards: equal balance between illustration and text;
+- Home remains friendly without becoming busy;
+- educational representations stay tactile but more diagrammatic.
+
+#### Group 7–8 — senior
+Goal: calm, capable, less juvenile.
+- mascot presence: low and contextual;
+- illustration density: restrained;
+- controls: slightly tighter, never below accessibility targets;
+- copy: direct and age-neutral;
+- subject cards: smaller illustration, more information density;
+- Home hero can become shallower and less decorative;
+- educational representations become cleaner and more diagrammatic;
+- avoid babyish props, oversized mascot poses and decorative scenery.
+
+### What stays identical across all groups
+- brand identity;
+- Mees anatomy and canonical eyes;
+- primary color system;
+- component family;
+- navigation model;
+- Focus Mode behavior;
+- feedback language principles;
+- non-gamification rules;
+- accessibility rules;
+- learning-engine behavior.
+
+### What may scale gradually
+- mascot size and frequency;
+- illustration size;
+- surface color richness;
+- spacing;
+- type scale;
+- amount of explanatory text;
+- content density;
+- use of contextual props/scenery.
+
+### Transition rule
+Do not make hard visual jumps at group boundaries. Group 4 should already hint at the middle profile, and group 6 should already hint at the senior profile. Age-band classes are implementation defaults, not rigid artistic walls.
+
+### Mockup requirement
+For every major screen family, visual QA should include at least:
+1. one junior example (group 3 or 4);
+2. one middle example (group 5 or 6);
+3. one senior example (group 7 or 8).
+
+The Home screen should be the first screen tested in all three age expressions before the V2 asset library is considered complete.
