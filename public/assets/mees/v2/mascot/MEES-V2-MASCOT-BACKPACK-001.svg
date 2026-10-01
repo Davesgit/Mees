@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 340" role="img" aria-label="Mees met rugtas">
+<defs>
+<linearGradient id="body" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#3090FF"/><stop offset="1" stop-color="#2369D5"/></linearGradient>
+<linearGradient id="pack" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F05B45"/><stop offset="1" stop-color="#C83A2D"/></linearGradient>
+</defs>
+<path d="M73 79c14-28 45-45 80-42-9 6-14 13-15 20 13-6 28-5 39 1-9 3-15 8-19 14 42 11 72 47 72 92 0 63-43 109-106 109-58 0-101-42-101-98 0-45 19-78 50-96z" fill="url(#body)"/>
+<path d="M54 171c-30 13-45 34-44 59 25-2 46-13 61-34" fill="#1F5EBC"/>
+<path d="M171 183c29 2 52 16 66 42-30 2-54-7-73-27" fill="#2777E6"/>
+<ellipse cx="178" cy="121" rx="48" ry="50" fill="#fff"/>
+<circle cx="192" cy="123" r="27" fill="#102A56"/><circle cx="202" cy="111" r="8" fill="#fff"/>
+<path d="M224 122l57 30-57 31z" fill="#FFB72B"/>
+<path d="M137 268c23 8 49 8 72 0" fill="none" stroke="#102A56" stroke-width="9" stroke-linecap="round"/>
+<path d="M151 275v31M199 274v32" stroke="#102A56" stroke-width="10" stroke-linecap="round"/>
+<path d="M134 306c-14 0-24 5-31 15 18 3 32 2 44-3M199 307c15-1 27 4 36 14-18 4-33 3-46-3" fill="#102A56"/>
+<path d="M39 113c-28 15-41 46-33 80l37 0c12-12 21-28 27-48 6-20 1-37-13-52z" fill="url(#pack)"/>
+<path d="M17 121c13-9 27-13 42-10" fill="none" stroke="#A82A23" stroke-width="10" stroke-linecap="round"/>
+<path d="M28 149h31" stroke="#FF9B78" stroke-width="8" stroke-linecap="round"/>
+<circle cx="53" cy="184" r="8" fill="#F6C445"/>
+</svg>
