@@ -183,10 +183,10 @@ Every later pose must preserve the same canonical open-eye construction, beak, c
 Flying, running, sleeping, peeking, celebration, trophy, heart and star poses are not required for the current MVP. Sprite sheets are pose research only.
 
 ## Subject illustrations
-- [ ] MEES-V2-SUBJECT-MATH-001 — Rekenen, transparent
-- [ ] MEES-V2-SUBJECT-READING-001 — Taal & lezen, transparent
-- [ ] MEES-V2-SUBJECT-NATURE-001 — Wereld & natuur, transparent
-- [ ] MEES-V2-SUBJECT-CREATIVE-001 — Creatief, transparent
+- [ ] MEES-V2-SUBJECT-MATH-001 — Rekenen, transparent — file: `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-MATH-001.svg` — status: in-screen review
+- [ ] MEES-V2-SUBJECT-READING-001 — Taal & lezen, transparent — file: `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-READING-001.svg` — status: in-screen review
+- [ ] MEES-V2-SUBJECT-NATURE-001 — Wereld & natuur, transparent — file: `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-NATURE-001.svg` — status: in-screen review
+- [ ] MEES-V2-SUBJECT-CREATIVE-001 — Creatief, transparent — file: `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-CREATIVE-001.svg` — status: in-screen review
 
 Current MEES-SUBJECT-*-001.png files are V1 placeholders and must be replaced.
 
@@ -375,3 +375,18 @@ For each screen, work in numbered batches:
 - G: UI icons
 
 Do not generate the next batch until the current batch has been visually reviewed in context.
+
+
+## Home implementation checkpoint — full first pass
+
+The complete Home screen is now implemented as a reviewable V2 pass against the approved age-progression mockups.
+
+Implemented with repository assets:
+- existing forest and mountain-lake scene files as reusable Home backgrounds;
+- existing backpack mascot as temporary hero character;
+- four new individual V2 subject SVG assets;
+- age-aware junior/middle/senior composition;
+- Home navigation, subject area, learning suggestions, continue panel and Ontdekboek;
+- no points, badges, stars, streaks, trophies or reward meters.
+
+The four V2 subject SVGs are deliberately still marked unchecked until the user reviews them in the deployed Home screen. The existing backpack mascot and legacy scene files remain temporary/review assets, not automatically promoted to V2 canonical status.
