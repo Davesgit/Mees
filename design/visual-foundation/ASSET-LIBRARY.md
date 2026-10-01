@@ -155,7 +155,7 @@ Legend:
 - visually approved does not count as done until the production file exists
 
 ## Brand
-- [ ] MEES-V2-BRAND-HEAD-001 — compact V2 Mees head, transparent
+- [ ] MEES-V2-BRAND-HEAD-001 — compact V2 Mees head, transparent — file: `public/assets/mees/v2/brand/MEES-V2-BRAND-HEAD-001.svg` — status: in-screen review
 - [ ] MEES-V2-BRAND-WORDMARK-001 — custom Mees wordmark, transparent
 - [ ] MEES-V2-BRAND-LOGO-HORIZONTAL-001 — head + wordmark
 - [ ] MEES-V2-BRAND-APPICON-001 — app/PWA icon
@@ -172,6 +172,7 @@ Current MEES-BRAND-HEAD-001.png remains a temporary V1 bridge.
 Every later pose must preserve the same canonical open-eye construction, beak, crest, body proportions, feet and blue palette.
 
 ## Product mascot poses
+- [ ] MEES-V2-MASCOT-BACKPACK-001 — Home hero with backpack — file: `public/assets/mees/v2/mascot/MEES-V2-MASCOT-BACKPACK-001.svg` — status: in-screen review
 - [ ] MEES-V2-MASCOT-BOOKS-001 — calm pose on books, Home/learning context
 - [ ] MEES-V2-MASCOT-CURIOUS-001 — curious/supportive context
 - [ ] MEES-V2-MASCOT-THINKING-001 — hint/explanation support
@@ -390,3 +391,21 @@ Implemented with repository assets:
 - no points, badges, stars, streaks, trophies or reward meters.
 
 The four V2 subject SVGs are deliberately still marked unchecked until the user reviews them in the deployed Home screen. The existing backpack mascot and legacy scene files remain temporary/review assets, not automatically promoted to V2 canonical status.
+
+
+## Home asset batch checkpoint — 2026-10-01
+
+Created and wired for the frozen group 5–6 Home review:
+- `public/assets/mees/v2/brand/MEES-V2-BRAND-HEAD-001.svg`
+- `public/assets/mees/v2/mascot/MEES-V2-MASCOT-BACKPACK-001.svg`
+- `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-MATH-001.svg`
+- `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-READING-001.svg`
+- `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-NATURE-001.svg`
+- `public/assets/mees/v2/subjects/MEES-V2-SUBJECT-CREATIVE-001.svg`
+
+All six remain unchecked until the deployed 1440px Home screenshot is visually reviewed against `11-HOME-MIDDLE-LAYOUT-SPEC.md`.
+
+Still missing before Home freeze:
+- final V2 custom wordmark / horizontal logo lockup;
+- final visual approval of the reused mountain scene crop;
+- screenshot comparison and corrective pass.
