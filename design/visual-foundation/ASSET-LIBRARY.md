@@ -335,3 +335,43 @@ Visual rule for math assets:
 - no mascot decoration inside the mathematical object;
 - build interactive representations as SVG/React whenever possible;
 - AI illustration may help explore look-and-feel but does not become the source of truth for exact math geometry or values.
+
+
+## Mockup-first production workflow
+
+From this point onward, Mees visual production follows a screen-first workflow rather than generating the entire asset library in isolation.
+
+### Order
+1. Design the screen mockup at a realistic desktop/mobile viewport.
+2. Identify exactly which visual assets that screen needs.
+3. Generate each required asset individually, never as a collage crop.
+4. Review anatomy, transparency, scale, context and V2 consistency.
+5. Register the asset here with a stable asset ID.
+6. Save the production file to the repository.
+7. Wire it into the real screen.
+8. Compare implementation with the approved mockup at the same viewport.
+9. Only then mark the asset complete.
+
+### Why
+Mockups are the visual contract. They prevent unnecessary assets, expose scale/composition problems early and make it clear whether a mascot pose, prop, scene or subject illustration is actually needed.
+
+### Screen production sequence
+1. Home
+2. Rekenen Focus Mode
+3. Hint / retry / correct states
+4. Session end
+5. Onboarding
+6. Discover/topic screens when implemented
+7. Parent/teacher areas later
+
+### Asset batches
+For each screen, work in numbered batches:
+- A: brand
+- B: mascot
+- C: props
+- D: subject/content illustrations
+- E: backgrounds/scenes
+- F: educational representations
+- G: UI icons
+
+Do not generate the next batch until the current batch has been visually reviewed in context.
