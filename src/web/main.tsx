@@ -19,7 +19,7 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
 </header>
 <section className="mees-home">
   <section className="mees-home-hero">
-    <img className="mees-home-hero-scene" src="/assets/mees/MEES-SCENE-MOUNTAIN-LAKE-001.jpg" alt="" aria-hidden="true"/>
+    <img className="mees-home-hero-scene" src={ageBand==="junior"?"/assets/mees/MEES-SCENE-FOREST-DISCOVERY-001.jpg":"/assets/mees/MEES-SCENE-MOUNTAIN-LAKE-001.jpg"} alt="" aria-hidden="true"/>
     <div className="mees-home-hero-overlay" aria-hidden="true"/>
     <div className="mees-home-hero-copy">
       <p className="mees-eyebrow">{ageBand==="junior"?"Hoi!":ageBand==="middle"?"Goedemorgen":"Welkom terug"}</p>
@@ -27,7 +27,7 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
       <p>{ageBand==="junior"?"Kies iets dat je leuk vindt. Mees helpt je onderweg.":ageBand==="middle"?"Je kunt verder waar je was of zelf een onderwerp kiezen.":"Ga verder met je leerroute of kies een onderwerp om te verdiepen."}</p>
     </div>
     <div className="mees-home-hero-mascot" aria-hidden="true">
-      <img src={ageBand==="senior"?"/assets/mees/MEES-BRAND-HEAD-001.png":"/assets/mees/MEES-MASCOT-HERO-BACKPACK-001.png"} alt=""/>
+      <img src="/assets/mees/MEES-MASCOT-HERO-BACKPACK-001.png" alt=""/>
     </div>
   </section>
 
@@ -45,9 +45,9 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
     <div className="mees-home-panel">
       <div className="mees-section-heading"><div><p className="mees-eyebrow">Verder leren</p><h2>{ageBand==="senior"?"Jouw volgende uitdaging":"Vandaag voor jou"}</h2></div></div>
       <div className="mees-learning-cards">
-        <button className="mees-learning-card" onClick={reset}><span className="mees-learning-icon">12·3</span><span><strong>{ageBand==="senior"?"Procenten berekenen":"Verder met rekenen"}</strong><small>Rekenen</small></span><span aria-hidden="true">→</span></button>
-        <article className="mees-learning-card is-muted"><span className="mees-learning-icon">Aa</span><span><strong>{ageBand==="junior"?"Een kort verhaaltje":"Een tekst om te ontdekken"}</strong><small>Taal & lezen</small></span></article>
-        {ageBand!=="junior"&&<article className="mees-learning-card is-muted"><span className="mees-learning-icon">◎</span><span><strong>{ageBand==="senior"?"Energie en klimaat":"Leven in het water"}</strong><small>Wereld & natuur</small></span></article>}
+        <button className="mees-learning-card" onClick={reset}><img className="mees-learning-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-MATH-001.svg" alt="" aria-hidden="true"/><span><strong>{ageBand==="senior"?"Procenten berekenen":"Verder met rekenen"}</strong><small>Rekenen</small></span><span aria-hidden="true">→</span></button>
+        <article className="mees-learning-card is-muted"><img className="mees-learning-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-READING-001.svg" alt="" aria-hidden="true"/><span><strong>{ageBand==="junior"?"Een kort verhaaltje":"Een tekst om te ontdekken"}</strong><small>Taal & lezen</small></span></article>
+        {ageBand!=="junior"&&<article className="mees-learning-card is-muted"><img className="mees-learning-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-NATURE-001.svg" alt="" aria-hidden="true"/><span><strong>{ageBand==="senior"?"Energie en klimaat":"Leven in het water"}</strong><small>Wereld & natuur</small></span></article>}
       </div>
     </div>
 
