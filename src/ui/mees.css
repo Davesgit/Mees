@@ -583,3 +583,70 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 @media(max-width:460px){
  .mees-subject-grid{grid-template-columns:1fr}
 }
+
+
+/* HOME V3.1 — Ontdekboek, no reward mechanics */
+.mees-discovery-book{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);
+  gap:16px;
+  padding:24px;
+  border:1px solid var(--mees-border);
+  border-radius:18px;
+  background:linear-gradient(135deg,#f4f9ff 0%,#fbfdff 52%,#f6fbf7 100%);
+}
+.mees-discovery-copy h2{
+  margin:0 0 8px;
+  font-size:1.45rem;
+  letter-spacing:-.02em;
+}
+.mees-discovery-copy>p:not(.mees-eyebrow){
+  max-width:620px;
+  margin:0 0 18px;
+  color:var(--mees-muted);
+  line-height:1.55;
+}
+.mees-fact-card{
+  align-self:stretch;
+  padding:20px;
+  border:1px solid #d8e6f3;
+  border-radius:16px;
+  background:#fff;
+}
+.mees-fact-label{
+  display:inline-block;
+  margin-bottom:9px;
+  padding:4px 8px;
+  border-radius:8px;
+  background:#edf5ff;
+  color:var(--mees-primary);
+  font-size:.72rem;
+  font-weight:850;
+  letter-spacing:.03em;
+}
+.mees-fact-card strong{
+  display:block;
+  color:var(--mees-text);
+  font-size:1rem;
+  line-height:1.42;
+}
+.mees-fact-card p{
+  margin:9px 0 0;
+  color:var(--mees-muted);
+  font-size:.82rem;
+  line-height:1.45;
+}
+.mees-age--junior .mees-discovery-book{
+  background:linear-gradient(135deg,#eef7ff,#fff9e9 58%,#f0faf4);
+}
+.mees-age--junior .mees-fact-card strong{font-size:1.05rem}
+.mees-age--senior .mees-discovery-book{
+  grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);
+  background:#fff;
+}
+.mees-age--senior .mees-fact-card{
+  background:#f8fbfe;
+}
+@media(max-width:800px){
+  .mees-discovery-book{grid-template-columns:1fr}
+}
