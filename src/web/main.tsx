@@ -7,8 +7,9 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
 <header className="mees-header mees-home-header">
   <Brand/>
   <nav className="mees-home-nav" aria-label="Hoofdnavigatie">
-    <button className="is-active">Home</button>
-    <button>Ontdekken</button><button>Ontdekboek</button>
+    <button className="is-active" onClick={()=>window.scrollTo({top:0,behavior:"smooth"})}>Home</button>
+    <button onClick={()=>document.getElementById("subjects-title")?.scrollIntoView({behavior:"smooth"})}>Leren</button>
+    <button onClick={()=>document.getElementById("discovery-title")?.scrollIntoView({behavior:"smooth"})}>Ontdekboek</button>
   </nav>
   <label className="mees-group-switcher">Groep
     <select value={group} onChange={e=>setGroup(Number(e.target.value))} aria-label="Kies groep voor voorbeeld">
@@ -33,10 +34,10 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
   <section className="mees-home-section" aria-labelledby="subjects-title">
     <div className="mees-section-heading"><div><p className="mees-eyebrow">Jouw vakken</p><h2 id="subjects-title">Kies een onderwerp</h2></div></div>
     <div className="mees-subject-grid">
-      <button className="mees-subject-card subject-math" onClick={reset}><img className="mees-subject-image" src="/assets/mees/MEES-SUBJECT-MATH-001.png" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Rekenen</strong><small>{ageBand==="senior"?"Verdiep en oefen":"Getallen, sommen en meer"}</small></span><span className="mees-subject-arrow" aria-hidden="true">→</span></button>
-      <article className="mees-subject-card subject-language is-coming-soon"><img className="mees-subject-image" src="/assets/mees/MEES-SUBJECT-READING-001.png" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Taal & lezen</strong><small>{ageBand==="senior"?"Analyseer en groei":"Woorden en verhalen"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
-      <article className="mees-subject-card subject-world is-coming-soon"><img className="mees-subject-image" src="/assets/mees/MEES-SUBJECT-NATURE-001.png" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Wereld & natuur</strong><small>{ageBand==="senior"?"Onderzoek en begrijp":"Ontdek de wereld"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
-      <article className="mees-subject-card subject-creative is-coming-soon"><img className="mees-subject-image" src="/assets/mees/MEES-SUBJECT-CREATIVE-001.png" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Creatief</strong><small>{ageBand==="senior"?"Ontwerp en maak":"Teken, maak en ontdek"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
+      <button className="mees-subject-card subject-math" onClick={reset}><img className="mees-subject-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-MATH-001.svg" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Rekenen</strong><small>{ageBand==="senior"?"Verdiep en oefen":"Getallen, sommen en meer"}</small></span><span className="mees-subject-arrow" aria-hidden="true">→</span></button>
+      <article className="mees-subject-card subject-language is-coming-soon"><img className="mees-subject-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-READING-001.svg" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Taal & lezen</strong><small>{ageBand==="senior"?"Analyseer en groei":"Woorden en verhalen"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
+      <article className="mees-subject-card subject-world is-coming-soon"><img className="mees-subject-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-NATURE-001.svg" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Wereld & natuur</strong><small>{ageBand==="senior"?"Onderzoek en begrijp":"Ontdek de wereld"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
+      <article className="mees-subject-card subject-creative is-coming-soon"><img className="mees-subject-image" src="/assets/mees/v2/subjects/MEES-V2-SUBJECT-CREATIVE-001.svg" alt="" aria-hidden="true"/><span className="mees-subject-copy"><strong>Creatief</strong><small>{ageBand==="senior"?"Ontwerp en maak":"Teken, maak en ontdek"}</small><span className="mees-coming-soon">Binnenkort</span></span></article>
     </div>
   </section>
 
