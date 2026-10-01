@@ -159,3 +159,24 @@ Additional UX cleanup:
 - the V2 design-token document is the active production reference.
 
 This checkpoint deliberately keeps legacy subject artwork as temporary content assets. Replacing illustration files remains a separate visual-QA step.
+
+
+## Visual QA checkpoint — 2026-10-01
+
+A fresh V2 flow board was generated after the stylesheet migration to test the direction across Home, exercise, correct/incorrect feedback, hint, closure and reusable components.
+
+Review result: reference only, not approved production UI.
+
+Useful signals:
+- the calmer palette, white space, restrained cards and compact subject tiles fit the V2 direction;
+- the small blue bird reads clearly at several scales;
+- the subject-card hierarchy is promising.
+
+Rejected signals:
+- bottom navigation, trophy/progress destination and profile navigation are not part of current Mees;
+- celebratory rays and large success/error symbols are too reward-like;
+- the mascot eye/anatomy varies between poses and therefore violates the canonical-eye lock;
+- scenic/mascot presence inside active exercises is too strong for Focus Mode;
+- generated text, progress counts and sample learning content are illustrative only.
+
+No image from this board may be registered as a production asset. Production assets must be generated/exported individually and pass the asset registry + visual QA process.
