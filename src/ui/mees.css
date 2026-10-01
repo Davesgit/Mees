@@ -984,3 +984,18 @@ button.mees-learning-card:hover{
   .mees-age--middle .mees-subject-card{height:160px;min-height:160px}
   .mees-age--middle .mees-home-dashboard{grid-template-columns:1fr}
 }
+
+
+/* V2 brand lockup */
+.mees-brand-lockup{
+  display:block;
+  width:148px;
+  height:auto;
+}
+.mees-session-header .mees-brand-lockup,
+.mees-done-header .mees-brand-lockup{
+  width:132px;
+}
+@media(max-width:650px){
+  .mees-brand-lockup{width:132px}
+}
