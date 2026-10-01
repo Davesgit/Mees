@@ -650,3 +650,125 @@ button:disabled { cursor: not-allowed; opacity: .42; }
 @media(max-width:800px){
   .mees-discovery-book{grid-template-columns:1fr}
 }
+
+
+/* HOME V3.2 — final mockup alignment pass */
+.mees-home-header{
+  position:sticky;
+  top:0;
+  z-index:20;
+  padding:8px 10px;
+  margin:0 0 18px;
+  border:1px solid rgba(220,230,240,.9);
+  border-radius:16px;
+  background:rgba(248,250,252,.94);
+  backdrop-filter:blur(12px);
+}
+.mees-home-nav button{
+  transition:background var(--mees-motion-fast) ease,color var(--mees-motion-fast) ease;
+}
+.mees-home-nav button:hover{background:#f1f6fc;color:var(--mees-text)}
+.mees-home-hero{
+  box-shadow:0 12px 30px rgba(23,61,112,.06);
+}
+.mees-home-hero-scene{filter:saturate(.9) contrast(.96)}
+.mees-home-hero-copy{
+  align-self:center;
+}
+.mees-home-hero-mascot img{
+  filter:drop-shadow(0 12px 18px rgba(23,61,112,.13));
+}
+.mees-home-section{
+  padding-top:6px;
+}
+.mees-section-heading{
+  display:flex;
+  align-items:end;
+  justify-content:space-between;
+  gap:16px;
+}
+.mees-subject-card{
+  overflow:hidden;
+  background:#fff;
+}
+.subject-math{background:linear-gradient(180deg,#f4fbf7,#edf8f2)}
+.subject-language{background:linear-gradient(180deg,#fffaf0,#fff5df)}
+.subject-world{background:linear-gradient(180deg,#f5fbff,#edf7fd)}
+.subject-creative{background:linear-gradient(180deg,#fbf7fd,#f7f0fa)}
+.mees-subject-image{
+  align-self:center;
+  justify-self:center;
+  transition:transform var(--mees-motion-normal) ease;
+}
+button.mees-subject-card:hover .mees-subject-image{transform:translateY(-2px) scale(1.02)}
+.mees-subject-card.is-coming-soon{opacity:.84}
+.mees-subject-card.is-coming-soon .mees-subject-image{filter:saturate(.8)}
+.mees-home-panel{
+  box-shadow:0 6px 18px rgba(23,61,112,.035);
+}
+.mees-learning-card{
+  transition:border-color var(--mees-motion-fast) ease,background var(--mees-motion-fast) ease,transform var(--mees-motion-fast) ease;
+}
+button.mees-learning-card:hover{
+  border-color:#b9cee5;
+  background:#f7fbff;
+  transform:translateY(-1px);
+}
+.mees-learning-image{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+}
+.mees-learning-icon{display:none}
+.mees-home-status{
+  position:relative;
+  overflow:hidden;
+}
+.mees-home-status:after{
+  content:"";
+  position:absolute;
+  right:-34px;
+  bottom:-50px;
+  width:150px;
+  height:150px;
+  border-radius:50%;
+  background:#e6f2ff;
+  opacity:.58;
+}
+.mees-home-status>*{position:relative;z-index:1}
+.mees-discovery-book{
+  box-shadow:0 6px 18px rgba(23,61,112,.035);
+}
+.mees-fact-card{
+  position:relative;
+  overflow:hidden;
+}
+.mees-fact-card:after{
+  content:"?";
+  position:absolute;
+  right:16px;
+  bottom:-10px;
+  color:#edf5ff;
+  font-size:5.5rem;
+  font-weight:900;
+  line-height:1;
+  z-index:0;
+}
+.mees-fact-card>*{position:relative;z-index:1}
+
+/* Age continuity: richer junior, balanced middle, restrained senior */
+.mees-age--junior .mees-home{
+  gap:22px;
+}
+.mees-age--junior .mees-home-hero-scene{filter:saturate(1) contrast(.98)}
+.mees-age--junior .mees-subject-card{border-radius:18px}
+.mees-age--junior .mees-home-panel{border-radius:20px}
+.mees-age--middle .mees-home-hero-scene{filter:saturate(.92) contrast(.97)}
+.mees-age--senior .mees-home{
+  gap:17px;
+}
+.mees-age--senior .mees-home-hero-scene{filter:saturate(.68) contrast(.94)}
+.mees-age--senior .mees-home-hero-mascot img{max-width:125px;max-height:135px;opacity:.92}
+.mees-age--senior .mees-home-panel{padding:19px}
+.mees-age--senior .mees-discovery-book{padding:20px}
+.mees-age--senior .mees-section-heading h2{font-size:1.32rem}
