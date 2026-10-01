@@ -8,7 +8,7 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
   <Brand/>
   <nav className="mees-home-nav" aria-label="Hoofdnavigatie">
     <button className="is-active">Home</button>
-    <button>Ontdekken</button>
+    <button>Ontdekken</button><button>Ontdekboek</button>
   </nav>
   <label className="mees-group-switcher">Groep
     <select value={group} onChange={e=>setGroup(Number(e.target.value))} aria-label="Kies groep voor voorbeeld">
@@ -42,7 +42,7 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
 
   <section className="mees-home-dashboard">
     <div className="mees-home-panel">
-      <div className="mees-section-heading"><div><p className="mees-eyebrow">Verder leren</p><h2>{ageBand==="junior"?"Vandaag voor jou":ageBand==="middle"?"Vandaag voor jou":"Jouw volgende uitdaging"}</h2></div></div>
+      <div className="mees-section-heading"><div><p className="mees-eyebrow">Verder leren</p><h2>{ageBand==="senior"?"Jouw volgende uitdaging":"Vandaag voor jou"}</h2></div></div>
       <div className="mees-learning-cards">
         <button className="mees-learning-card" onClick={reset}><span className="mees-learning-icon">12·3</span><span><strong>{ageBand==="senior"?"Procenten berekenen":"Verder met rekenen"}</strong><small>Rekenen</small></span><span aria-hidden="true">→</span></button>
         <article className="mees-learning-card is-muted"><span className="mees-learning-icon">Aa</span><span><strong>{ageBand==="junior"?"Een kort verhaaltje":"Een tekst om te ontdekken"}</strong><small>Taal & lezen</small></span></article>
@@ -51,11 +51,25 @@ const sessionStopped=endReason==="stopped";const sessionNeedsHelp=endReason==="n
     </div>
 
     <aside className="mees-home-panel mees-home-status">
-      <p className="mees-eyebrow">Waar je mee bezig bent</p>
-      <h2>Rustig verder, stap voor stap.</h2>
-      <p>Mees onthoudt waar je was en past de volgende oefeningen daarop aan.</p>
-      <button className="mees-button mees-button--primary" onClick={reset}>Ga verder</button>
+      <p className="mees-eyebrow">Ga verder waar je was</p>
+      <h2>Je leerroute staat voor je klaar.</h2>
+      <p>Mees onthoudt welke stap je geoefend hebt en kiest daarna iets dat daarbij past.</p>
+      <button className="mees-button mees-button--primary" onClick={reset}>Verder met rekenen</button>
     </aside>
+  </section>
+
+  <section className="mees-discovery-book" aria-labelledby="discovery-title">
+    <div className="mees-discovery-copy">
+      <p className="mees-eyebrow">Ontdekboek</p>
+      <h2 id="discovery-title">Iets geleerd? Neem een weetje mee.</h2>
+      <p>Na een leerroute kan er een passend weetje in je Ontdekboek verschijnen. Geen punten of prijzen, gewoon interessante dingen om later terug te lezen.</p>
+      <button className="mees-button mees-button--secondary">Bekijk het Ontdekboek</button>
+    </div>
+    <article className="mees-fact-card">
+      <span className="mees-fact-label">Wist je dat?</span>
+      <strong>{ageBand==="junior"?"Een octopus drie harten heeft?":ageBand==="middle"?"Bijen met een dans aan elkaar kunnen laten zien waar bloemen staan?":"Licht van de zon er ongeveer acht minuten over doet om de aarde te bereiken?"}</strong>
+      <p>{ageBand==="senior"?"Een kort weetje kan een startpunt zijn voor verder onderzoek.":"Je kunt zulke weetjes bewaren en later opnieuw bekijken."}</p>
+    </article>
   </section>
 </section></main>;if(screen==="done")return <main className={"mees-shell mees-done "+ageClass}><header className="mees-header mees-done-header"><Brand/></header><section className="mees-card mees-finish"><img className="mees-finish-mascot" src="/assets/mees/MEES-BRAND-HEAD-001.png" alt="" aria-hidden="true"/><p className="mees-eyebrow">{sessionStopped?"Voor nu gestopt":sessionNeedsHelp?"Even samen kijken":"Voor vandaag klaar"}</p><h1>{sessionStopped?"Prima, je kunt hier stoppen.":sessionNeedsHelp?"Dit stukje vraagt om extra uitleg.":"Mooi gewerkt."}</h1><p>{sessionStopped?"Je hoeft niet alles in één keer af te maken. Je kunt straks of een andere keer verder.":sessionNeedsHelp?"Vraag een ouder of leerkracht om even mee te kijken. Daarna kun je weer verder.":"Je hebt geoefend en verschillende stappen geprobeerd. Dat is genoeg voor nu."}</p><div className="mees-finish-actions"><button className="mees-button mees-button--primary" onClick={()=>setScreen("home")}>Naar home</button>{sessionStopped&&<button className="mees-button mees-button--secondary" onClick={()=>setScreen("session")}>Toch verder</button>}</div></section><p className="mees-finish-note">Je hoeft niets bij te houden. Mees helpt je de volgende keer weer verder.</p></main>;
 return <main className={"mees-shell mees-focus-mode "+ageClass}><header className="mees-session-header"><Brand/><span className="mees-progress">{vm.progressLabel}</span><button className="mees-button mees-button--quiet mees-stop" onClick={stop}>Stoppen</button></header><div className="mees-focus-shell">{session.goalStack.length>0&&<div className="route-note" role="status"><span className="route-note-icon" aria-hidden="true">↙</span><div><strong>Even terug naar de basis</strong><span>We bekijken eerst een kleinere stap. Daarna ga je vanzelf verder waar je was.</span></div></div>}<section className={"mees-card mees-exercise-card state-"+exercise.attempt.uiState}><div className="mees-exercise-intro"><div><p className="mees-eyebrow">Rekenen</p><span className="mees-exercise-kicker">Neem rustig de tijd.</span></div></div><h1>{vm.prompt}</h1>{exercise.kind==="basic"?<div className="basic-answer"><label htmlFor="answer">Jouw antwoord</label><input id="answer" inputMode="numeric" value={input} disabled={completed} onChange={e=>{setInput(e.target.value);if(exercise.attempt.uiState==="incorrect_can_retry")setExercise(x=>({...x,attempt:{...x.attempt,uiState:"answering"}} as ExerciseAttempt))}} onKeyDown={e=>{if(e.key==="Enter")submit()}} aria-describedby="answer-help"/><span id="answer-help">{isRetry?"Je kunt je antwoord aanpassen.":"Vul je antwoord in."}</span></div>:<NumberLine exercise={exercise} setExercise={setExercise}/>}<div className="mees-actions"><button className="mees-button mees-button--primary" onClick={submit} disabled={!completed&&!canSubmit}>{vm.primaryLabel}</button>{vm.canAskHint&&<button className="mees-button mees-button--secondary" onClick={hint}>{vm.hint?"Nog een hint":"Hint"}</button>}</div>{vm.hint&&<aside className="mees-feedback mees-feedback--hint"><span className="mees-feedback-icon" aria-hidden="true">?</span><div><strong>Een zetje</strong><p>{vm.hint}</p></div></aside>}{vm.feedback&&<div className={"mees-feedback "+(exercise.attempt.uiState==="completed"?"mees-feedback--success":"mees-feedback--retry")} role="status"><span className="mees-feedback-icon" aria-hidden="true">{exercise.attempt.uiState==="completed"?"✓":"↻"}</span><div><strong>{exercise.attempt.uiState==="completed"?"Goed bezig!":"Probeer nog eens"}</strong><p>{vm.feedback}</p>{exercise.attempt.uiState==="completed"&&exercise.attempt.question.explanation&&<div className="mees-mini-explanation"><span>Zo kun je het zien</span><p>{exercise.attempt.question.explanation}</p></div>}{exercise.attempt.uiState==="completed"&&session.goalStack.length>0&&<p className="mees-return-note">Hierna ga je terug naar de som waar je mee bezig was.</p>}</div></div>}</section></div></main>}
