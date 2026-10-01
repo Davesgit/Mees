@@ -263,3 +263,75 @@ An image can only be checked when:
 6. it has a stable asset ID and repository path;
 7. it passed visual QA in the real screen;
 8. this registry points to the production file.
+
+
+## V2 checklist expansion — attributes, scenes and richer math visuals
+
+### Mascot attributes / contextual props
+These are reusable transparent props or prop-specific mascot variants. They are allowed when they communicate context, not as permanent anatomy.
+
+- [ ] MEES-V2-PROP-BACKPACK-001 — rugtas for discovery/outdoor context
+- [ ] MEES-V2-PROP-CAP-001 — pet for outdoor/project context
+- [ ] MEES-V2-PROP-POINTER-001 — leerstok/pointer for explanation context
+- [ ] MEES-V2-PROP-BOOK-001 — single book
+- [ ] MEES-V2-PROP-BOOKSTACK-001 — stack of books
+- [ ] MEES-V2-PROP-MAGNIFIER-001 — onderzoek/ontdekken
+- [ ] MEES-V2-PROP-MAP-001 — route/discovery
+- [ ] MEES-V2-PROP-PENCIL-001 — writing/creative context
+- [ ] MEES-V2-PROP-PALETTE-001 — creative context
+- [ ] MEES-V2-PROP-RULER-001 — measurement/math context
+- [ ] MEES-V2-PROP-BACKPACK-CAP-001 — optional combined outdoor set if composition benefits
+
+Props should be drawable as independent transparent assets where practical so the same approved object can be reused consistently.
+
+### Supporting scene library
+The existing V1 scenes are not automatically rejected. Their visual quality is useful, but they should be reframed as optional supporting scene assets rather than default page backgrounds.
+
+Current scene decisions:
+- MEES-SCENE-COAST-LIGHTHOUSE-001.jpg — REVIEW FOR V2 REUSE
+- MEES-SCENE-DISCOVERY-STUDY-001.jpg — REVIEW FOR V2 REUSE
+- MEES-SCENE-FOREST-DISCOVERY-001.jpg — REVIEW FOR V2 REUSE
+- MEES-SCENE-MOUNTAIN-LAKE-001.jpg — REVIEW FOR V2 REUSE
+
+Potential V2 scene set:
+- [ ] MEES-V2-SCENE-CLASSROOM-001 — calm learning/classroom corner
+- [ ] MEES-V2-SCENE-LIBRARY-001 — reading/library
+- [ ] MEES-V2-SCENE-FOREST-001 — nature/discovery
+- [ ] MEES-V2-SCENE-MOUNTAIN-LAKE-001 — exploration
+- [ ] MEES-V2-SCENE-COAST-001 — coast/lighthouse
+- [ ] MEES-V2-SCENE-WORKTABLE-001 — creative/project table
+- [ ] MEES-V2-SCENE-MATH-DESK-001 — restrained maths workspace
+- [ ] MEES-V2-SCENE-GARDEN-001 — nature/measurement context
+
+Scene rule: never behind an active Focus Mode task. Use only for Home/Discover/onboarding/topic introductions or wide editorial moments. Prefer low-detail, low-contrast edges and generous negative space for UI overlays.
+
+### Mathematics representation system v2
+The math layer should be richer than bare primitives, but still instructional rather than decorative.
+
+- [x] Number line — current interactive component; refine visual hierarchy and marker/tick family
+- [ ] Ten-frame — 5+5 structure with calm filled/unfilled counters
+- [ ] Rekenrek — Dutch primary-school bead rack, interactive-ready
+- [ ] Base-10 blocks — units, rods, flats, thousand cube where needed
+- [ ] Number bond / part-whole model — split/merge relationships
+- [ ] Bar model — comparison and word problems
+- [ ] Array / groups model — multiplication and division
+- [ ] Fraction bar — equivalent fractions and part-whole
+- [ ] Fraction circle — optional secondary representation
+- [ ] Clock face — analog time with draggable hands
+- [ ] Money set — euro notes/coins as simplified educational vectors
+- [ ] Measurement ruler — length and scale
+- [ ] Measuring jug / volume scale — capacity
+- [ ] Thermometer — temperature
+- [ ] Balance scale — equality/weight
+- [ ] Geometry toolkit — 2D shapes, 3D solids, angle arc, symmetry line
+- [ ] Grid / coordinate plane — later mathematics
+- [ ] Place-value chart — units/tens/hundreds/thousands
+- [ ] Number cards / digit tiles — composing/decomposing numbers
+
+Visual rule for math assets:
+- recognizable and tactile enough for children;
+- restrained soft shading is allowed;
+- exact quantity/scale must remain mathematically legible;
+- no mascot decoration inside the mathematical object;
+- build interactive representations as SVG/React whenever possible;
+- AI illustration may help explore look-and-feel but does not become the source of truth for exact math geometry or values.
